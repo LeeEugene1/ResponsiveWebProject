@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body>
+    <div class="colorBox"></div>
+    <div class="wrap">
+        <header class="header">
+            <div class="account_header">
+                <ul>
+                    <li><a href=""><i class="xi-profile-o"></i>Sign in</a></li>
+                    <!-- <li><a href=""><i class="xi-profile"></i>Nickname</a></li> -->
+                    <!-- <li><a href=""><i class="xi-log-out"></i>Log out</a></li> -->
+                    <li><a href=""><i class="xi-log-in"></i>Log in</a></li>
+                </ul>
+            </div>
+            <div class="menu_header">
+                <h2><a href="">CSK</a></h2>
+                <nav>
+                    <ul>
+                        <li><a href="">Dashboard</a></li>
+                        <li><a href="">Team</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="title_header">
+                <div>
+                    <h1>CSK Artificial Intelligence for</h1>
+                    <h1>In Silico Drug Discovery</h1>
+                </div>
+            </div>
+        </header>
+    </div>
+    <main class="main">
+        <!-- left -->
+        <section class="left_section">
+            <div class="dashBoard">
+                <div>
+                    <h3><a href="">DashBoard</a></h3>
+                </div>
+            </div>
+        </section>
+        
+        <!-- right -->
+        <section class="right_section">
+            <!-- request -->
+            <div class="request">
+                <div class="title">
+                        <h2>Request</h2>
+                        <div class="buttonStyle">
+                            
+                            <!-- modal -->
+                            <button class="btn new" id="modal_request"><i class="xi-plus-circle-o"></i>New Request</button>
+                            <div class="modal hidden">
+                                <div class="modal_overlay"></div>
+                                <div class="modal_content">
+                                    <div class="title">
+                                        <h1><i class="xi-plus-circle-o"></i>New Request</h1>
+                                        <div class="closeButton"><i class="xi-close"></i></div>
+                                    </div>
+                                    <div class="content">
+                                        <div>
+                                            <div>Name</div>
+                                            <div>
+                                                <input type="text" placeholder="Folder name">
+                                                <button class="btn check">Check</button>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button class="btn create">Create</button>
+                                            <button class="btn cancel">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="search">
+                    <div class="border_search">
+                        <input type="text" maxlength="100">
+                        <a href=""><i class="xi-search"></i></a>
+                    </div>
+                </div>
+                <table class="request_table">
+                    <caption>Request/index, Request name, Dataset, App/Pipeline, Date created, Status</caption>
+                    <colgroup>
+                        <col style="width:10%">
+                        <col style="width:30%">
+                        <col style="width:20%">
+                        <col style="width:20%">
+                        <col style="width:10%">
+                        <col style="width:10%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Request name</th>
+                            <th scope="col">Dataset</th>
+                            <th scope="col">App/Pipeline</th>
+                            <th scope="col">Date created</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="position_table">1</td>
+                            <td>Request name</td>
+                            <td>Request name</td>
+                            <td>Request name</td>
+                            <td class="position_table">2020.09.01</td>
+                            <!-- status에 따른 버튼 디자인입니다 -->
+                          <!-- <td class="position_table"><button class="button-status completed"><a href="{{ job.get_result_url }}">completed</a></button></td> -->
+                          <!-- <td class="position_table"><button class="button-status waiting"><a href="{{ job.get_result_url }}">waiting</a></button></td> -->
+                          <td class="position_table"><button class="button-status running"><a href="{{ job.get_result_url }}">running</a></button></td>
+                          <!-- <td class="position_table"><button class="button-status fail"><a href="{{ job.get_result_url }}">fail</a></button></td> -->
+                          <!-- <td class="position_table"><button class="button-status stop"><a href="{{ job.get_result_url }}">stop</a></button></td> -->
+                        </tr>
+                        <tr>
+                            <td class="position_table">1</td>
+                            <td class="">Request name</td>
+                            <td class="">Request name</td>
+                            <td class="table_left">Request name</td>
+                            <td class="position_table">2020.09.01</td>
+                            <!-- status에 따른 버튼 디자인입니다 -->
+                          <!-- <td class="position_table"><button class="button-status completed"><a href="{{ job.get_result_url }}">completed</a></button></td> -->
+                          <!-- <td class="position_table"><button class="button-status waiting"><a href="{{ job.get_result_url }}">waiting</a></button></td> -->
+                          <!-- <td class="position_table"><button class="button-status running"><a href="{{ job.get_result_url }}">running</a></button></td> -->
+                          <td class="position_table"><button class="button-status fail"><a href="{{ job.get_result_url }}">fail</a></button></td>
+                          <!-- <td class="position_table"><button class="button-status stop"><a href="{{ job.get_result_url }}">stop</a></button></td> -->
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="pagination">
+                    <div class="page-wrapper">
+                        <ul class="pagination justify-content-center">
+                            <!-- 이전 페이지 -->
+                            <li class="page-item prev">
+                                <a href="" class="page-link"><img src="./img/arrow-first.png" alt=""></a>
+                            </li>
+                            <li class="page-item prev">
+                                <a class="check_" href="" ><img src="./img/arrow-prev.png" alt=""></a>
+                            </li>
+                            <!-- 페이지 범위 및 현재 페이지 -->
+                                <li class="page-item active">
+                                    <span class="page-link"><a href="">1</a></span>
+                                </li>
+                                <li class="page-item">
+                                    <span class="page-link"><a href="">2</a></span>
+                                </li>
+                            <!-- 다음 페이지 -->
+                            <li class="page-item next">
+                                <a class="page-link" href=""><img src="./img/arrow-next.png" alt=""></a>
+                            </li>
+                            <li class="page-item next">
+                                <a href="" class="page-link"><img src="./img/arrow-last.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- myData -->
+            <div class="title"><h2>My Data</h2></div>
+            <div class="myData">
+                <div class="folder">
+                    <div class="button_folder">
+                        <div><button class="btn delete"><i class="xi-trash"></i>Delete Folder</button></div>
+                        <div><button class="btn new"><i class="xi-folder-add-o"></i>New Folder</button></div>
+                    </div>
+                    <div class="list_folder">
+                        <ul>
+                            <li class="folderSelected active">
+                                <a href="">
+                                    <i class="xi-folder-open"></i> Folder name1
+                                </a>
+                            </li>
+                            <li class="folderSelected">
+                                <a href="">
+                                    <i class="xi-folder-o"></i> Folder name1
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="page-wrapper">
+                        <ul class="pagination justify-content-center">
+                            <!-- 이전 페이지 -->
+                            <li class="page-item prev">
+                                <a class="check_" href="" ><img src="./img/arrow-prev.png" alt=""></a>
+                            </li>
+                            <!-- 페이지 범위 및 현재 페이지 -->
+                                <li class="page-item active" style="background-color:#2991CC; border:1px solid #2991CC;">
+                                    <span class="page-link"><a href="">1</a></span>
+                                </li>
+                                <li class="page-item">
+                                    <span class="page-link"><a href="">2</a></span>
+                                </li>
+                            <!-- 다음 페이지 -->
+                            <li class="page-item next">
+                                <a class="page-link" href=""><img src="./img/arrow-next.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="file">
+                    <div class="title">
+                        <h3><i class="xi-folder-open"></i>Folder Name1</h3>
+                        <div class="buttonStyle">
+                            <button class="btn new"><i class="xi-file-add-o"></i>New File</button>
+                        </div>
+                    </div>     
+                    <table class="file_table">
+                        <caption>My Data/index, file1, file2, etc, delete</caption>
+                        <colgroup>
+                            <col style="width:10%">
+                            <col style="width:30%">
+                            <col style="width:20%">
+                            <col style="width:20%">
+                            <col style="width:10%">
+                            <col style="width:10%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">file1</th>
+                                <th scope="col">file2</th>
+                                <th scope="col">etc</th>
+                                <th scope="col">delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td class="">Request name</td>
+                                <td class="">Request name</td>
+                                <td class="">Request name</td>
+                                <td class=""><i class="xi-trash"></i></td>
+                            </tr>
+                            <tr">
+                                <td>1</td>
+                                <td class="">Request name</td>
+                                <td class="">Request name</td>
+                                <td class="">Request name</td>
+                                <td class=""><i class="xi-trash"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="page-wrapper">
+                        <ul class="pagination justify-content-center">
+                            <!-- 이전 페이지 -->
+                            <li class="page-item prev">
+                                <a href="" class="page-link"><img src="./img/arrow-first.png" alt=""></a>
+                            </li>
+                            <li class="page-item prev">
+                                <a class="check_" href="" ><img src="./img/arrow-prev.png" alt=""></a>
+                            </li>
+                            <!-- 페이지 범위 및 현재 페이지 -->
+                                <li class="page-item active">
+                                    <span class="page-link"><a href="">1</a></span>
+                                </li>
+                                <li class="page-item">
+                                    <span class="page-link"><a href="">2</a></span>
+                                </li>
+                            <!-- 다음 페이지 -->
+                            <li class="page-item next">
+                                <a class="page-link" href=""><img src="./img/arrow-next.png" alt=""></a>
+                            </li>
+                            <li class="page-item next">
+                                <a href="" class="page-link"><img src="./img/arrow-last.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </section>
+    </main>
+        <script>
+            const open = document.querySelector('#modal_request')
+            const modal = document.querySelector('.modal') 
+            const overlay = document.querySelector('.modal_overlay')
+            const close = document.querySelector('.closeButton')
+
+            open.addEventListener('click', () => {
+                modal.classList.remove('hidden');
+            })
+
+            close.addEventListener('click', ()=>{
+                modal.classList.add('hidden');
+            })
+            document.addEventListener('click', (e) =>{
+                if(e.target == overlay){
+                    modal.classList.add('hidden');
+                }
+            })
+        </script>
+</body>
+</html>
