@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- <link rel="stylesheet" href="./xeicon/XEIcon-2.2.0 (1)/XEIcon-2.2.0/xeicon.min.css"> -->
 </head>
 <body>
-    <div class="colorBox"></div>
+    <!-- <div class="colorBox"></div> -->
     <div class="wrap">
         <header class="header">
             <div class="account_header">
@@ -26,25 +27,39 @@
                 <nav>
                     <ul>
                         <li><a href="">Dashboard</a></li>
+                        <li><a href="">Apps</a></li>
+                        <li><a href="">Pipelines</a></li>
                         <li><a href="">Team</a></li>
                         <li><a href="">Contact</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="title_header">
-                <div>
-                    <h1>CSK Artificial Intelligence for</h1>
-                    <h1>In Silico Drug Discovery</h1>
-                </div>
-            </div>
         </header>
+        
+        <div class="title_content">
+            <div>
+                <h1>CSK Artificial Intelligence for</h1>
+                <h1>In Silico Drug Discovery</h1>
+            </div>
+        </div>
     </div>
+
     <main class="main">
         <!-- left -->
         <section class="left_section">
-            <div class="dashBoard">
+            <div class="leftMenu active">
                 <div>
                     <h3><a href="">DashBoard</a></h3>
+                </div>
+            </div>
+            <div class="leftMenu">
+                <div>
+                    <h3><a href="">Apps</a></h3>
+                </div>
+            </div>
+            <div class="leftMenu">
+                <div>
+                    <h3><a href="">pipelines</a></h3>
                 </div>
             </div>
         </section>
@@ -56,32 +71,39 @@
                 <div class="title">
                         <h2>Request</h2>
                         <div class="buttonStyle">
-                            
-                            <!-- modal -->
-                            <button class="btn new" id="modal_request"><i class="xi-plus-circle-o"></i>New Request</button>
-                            <div class="modal hidden">
-                                <div class="modal_overlay"></div>
-                                <div class="modal_content">
-                                    <div class="title">
-                                        <h1><i class="xi-plus-circle-o"></i>New Request</h1>
-                                        <div class="closeButton"><i class="xi-close"></i></div>
-                                    </div>
-                                    <div class="content">
-                                        <div>
-                                            <div>Name</div>
-                                            <div>
-                                                <input type="text" placeholder="Folder name">
-                                                <button class="btn check">Check</button>
-                                            </div>
+                        <!-- modal_request -->
+                        <button class="btn new" id="modal_request"><i class="xi-plus-circle-o"></i>New Request</button>
+                        <div class="modal hidden">
+                            <div class="modal_overlay"></div>
+                            <div class="modal_content">
+                                <div class="title">
+                                    <h1><i class="xi-plus-circle-o"></i>New Request</h1>
+                                    <div class="closeButton"><i class="xi-close"></i></div>
+                                </div>
+                                <div class="content">
+                                    <div class="inputWrap">
+                                        <div class="inputName">Name</div>
+                                        <div class="inputArea">
+                                            <input type="text" placeholder="Folder name">
+                                            <button class="btn check">Check</button>
                                         </div>
-                                        <div>
-                                            <button class="btn create">Create</button>
-                                            <button class="btn cancel">Cancel</button>
+                                    </div>
+                                    <div class="inputWrap">
+                                        <div class="inputName">Description</div>
+                                        <div class="inputArea">
+                                            <!-- <input type="text" placeholder="Folder name"> -->
+                                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                                            <!-- <button class="btn check">Check</button> -->
                                         </div>
                                     </div>
                                 </div>
+                                <div class="button">
+                                    <button class="btn create">Create</button>
+                                    <button class="btn cancel">Cancel</button>
+                                </div>
                             </div>
                         </div>
+                    </div>
                 </div>
                 <div class="search">
                     <div class="border_search">
@@ -174,7 +196,34 @@
                 <div class="folder">
                     <div class="button_folder">
                         <div><button class="btn delete"><i class="xi-trash"></i>Delete Folder</button></div>
-                        <div><button class="btn new"><i class="xi-folder-add-o"></i>New Folder</button></div>
+                        <!-- modal_folder -->
+                        <div>
+                            <button class="btn new" id="modal_folder">
+                                <i class="xi-folder-add-o"></i>New Folder
+                            </button>
+                        </div>
+                        <div class="modal_folder hidden2">
+                            <div class="modal_overlay_folder"></div>
+                            <div class="modal_content">
+                                <div class="title">
+                                    <h1><i class="xi-folder-add-o"></i>New Folder</h1>
+                                    <div class="closeButton_folder"><i class="xi-close"></i></div>
+                                </div>
+                                <div class="content">
+                                    <div class="inputWrap">
+                                        <div class="inputName">Name</div>
+                                        <div class="inputArea">
+                                            <input type="text" placeholder="Folder name">
+                                            <button class="btn check">Check</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="button">
+                                    <button class="btn create">Create</button>
+                                    <button class="btn cancel">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="list_folder">
                         <ul>
@@ -214,8 +263,84 @@
                 <div class="file">
                     <div class="title">
                         <h3><i class="xi-folder-open"></i>Folder Name1</h3>
-                        <div class="buttonStyle">
-                            <button class="btn new"><i class="xi-file-add-o"></i>New File</button>
+                        <div class="">
+                            <button class="btn new" id="modal_file"><i class="xi-file-add-o"></i>New File</button>
+                        </div>
+                        <!-- modal_file -->
+                        <div class="modal_file hidden3">
+                            <div class="modal_overlay_file"></div>
+                            <div class="modal_content">
+                                <div class="title">
+                                    <h1><i class="xi-file-add-o"></i>New File</h1>
+                                    <div class="closeButton_file"><i class="xi-close"></i></div>
+                                </div>
+
+                                <div class="content">
+                                    <div class="DownloadAll">
+                                        <div class="selectOption">
+                                            <select name="" id="">
+                                                <option value="">
+                                                    PDB
+                                                </option>
+                                            </select>
+                                            <div>
+                                                <p>total file size:</p>
+                                                <p>243.0 KB</p>
+                                            </div>
+                                        </div>
+                                        <div class="button">
+                                            <button class="btn check">File upload</button>
+                                            <button class="btn cancel">Download all</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="inputWrap">
+                                        <table class="file_upload_table">
+                                            <caption>file/type,location,fileName, size, download, delete</caption>
+                                            <colgroup>
+                                                <col style="width:10%">
+                                                <col style="width:30%">
+                                                <col style="width:20%">
+                                                <col style="width:20%">
+                                                <col style="width:10%">
+                                                <col style="width:10%">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Type</th>
+                                                    <th scope="col">Location</th>
+                                                    <th scope="col">File Name</th>
+                                                    <th scope="col">Size</th>
+                                                    <th scope="col">Download</th>
+                                                    <th scope="col">Delete</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="position_table">1</td>
+                                                    <td>Request name</td>
+                                                    <td>Request name</td>
+                                                    <td>Request name</td>
+                                                    <td class="position_table"><i class="xi-file-download-o"></td>
+                                                    <td class="position_table"><i class="xi-trash"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="position_table">1</td>
+                                                    <td class="">Request name</td>
+                                                    <td class="">Request name</td>
+                                                    <td class="table_left">Request name</td>
+                                                    <td class="position_table"><i class="xi-file-download-o"></td>
+                                                    <td class="position_table"><i class="xi-trash"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="button">
+                                    <button class="btn create">Create</button>
+                                    <button class="btn cancel">Cancel</button>
+                                </div>
+                            </div>
                         </div>
                     </div>     
                     <table class="file_table">
@@ -245,7 +370,7 @@
                                 <td class="">Request name</td>
                                 <td class=""><i class="xi-trash"></i></td>
                             </tr>
-                            <tr">
+                            <tr>
                                 <td>1</td>
                                 <td class="">Request name</td>
                                 <td class="">Request name</td>
@@ -282,24 +407,8 @@
             </div>
         </section>
     </main>
-        <script>
-            const open = document.querySelector('#modal_request')
-            const modal = document.querySelector('.modal') 
-            const overlay = document.querySelector('.modal_overlay')
-            const close = document.querySelector('.closeButton')
 
-            open.addEventListener('click', () => {
-                modal.classList.remove('hidden');
-            })
-
-            close.addEventListener('click', ()=>{
-                modal.classList.add('hidden');
-            })
-            document.addEventListener('click', (e) =>{
-                if(e.target == overlay){
-                    modal.classList.add('hidden');
-                }
-            })
-        </script>
+    <script src="./modal.js"></script>
+   
 </body>
 </html>

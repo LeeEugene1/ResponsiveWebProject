@@ -51,49 +51,88 @@
 .btn{background-color: #fff; }
 .btn i{font-size:1.25em; margin-right:5px;}
 .btn.new, .btn.delete{color:#2991CC; display: flex; align-items: center; cursor: pointer;}
-.btn.check{border:1px solid #707070; color: #707070; cursor: pointer; width:100px; height:39px; border-radius: 5px;}
-.btn.create{background-color:  #2991CC; color: #fff; cursor: pointer; width:100px; height:39px; border-radius: 5px;}
+.btn.check{margin-left: 10px; min-width:100px; border:1px solid #707070; color: #707070; cursor: pointer; width:100px; height:39px; border-radius: 5px;}
+.btn.login, .btn.create{margin-right:8px; background-color:  #2991CC; color: #fff; cursor: pointer; width:100px; height:39px; border-radius: 5px;}
+.btn.login{width:100%; margin-right:0; margin:25px 0;}
 .btn.cancel{border:1px solid #2991CC; color: #2991CC; cursor: pointer; width:100px; height:39px; border-radius: 5px;}
 .wrap{
-    width:90%;
-    margin:0 auto;
+    /* width:90%; */
+    /* margin:0 auto; */
 }
-
-
-/* .main .buttonStyle{
-    cursor: pointer;
-    align-items: center; display: flex;
-    color:#2991CC;
-}
-.main .buttonStyle i{margin-right:5px;} */
-/* .main .buttonStyle button{cursor: pointer;color:#2991CC; background:white;} */
-
 .header{position: relative; background-color:#14233C; z-index: 100; height: 100px;}
-.header .account_header{display:flex; justify-content:flex-end; height: 50px; align-items: center;}
+.header .account_header{width:90%; margin:0 auto; display:flex; justify-content:flex-end; height: 50px; align-items: center;}
 .header .account_header a{color:whitesmoke; font-size: 12px; display: flex; align-items: center; font-weight: 100;}
 .header i{margin-right:5px; font-size: 16px;}
 .header div ul li{display:inline-block; margin-left:10px;}
-.header .menu_header{display: flex; justify-content: space-between; height:80px; align-items: center;}
+.header .menu_header{width:90%; margin:0 auto;  display: flex; justify-content: space-between; height:80px; align-items: center;}
 .header .menu_header a {color:whitesmoke;}
 .header .menu_header ul a{margin-left: 50px;}
-.header .title_header {width:100%; height: 300px; display: flex; align-items: center; justify-content: center;}
-.header .title_header h1{text-align: center; color:whitesmoke; font-weight: 100;}
-.colorBox{
+
+.title_content {
+    width:100%; 
+    height: 300px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background-size: cover;
+    background:url(../img/cover_color_post.png);
+    z-index: 1;
+}
+.title_content h1{text-align: center; color:whitesmoke; font-weight: 100;}
+
+
+/* login */
+
+.forget_login ul li{margin-left:0;}
+.colorBox_login{
     width:100%;
-    top:0;
-    left:0; 
-    height:500px; 
+    /* top:0;
+    left:0;  */
+    height:100%; 
     position: absolute; 
     background-size: cover;
     background:url(../img/cover_color_post.png);
     z-index: 1;
 }
-.main{display:flex; position: absolute; top:500px; width:100%; height:100%}
+
+.colorBox_login .loginWrap{
+    width: 45%;
+    max-width: 600px;
+    /* height: 500px; */
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.colorBox_login .box_login{
+    width:60%; 
+    /* display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; */
+    height: 100%;
+    margin:0 auto;
+    text-align: center;
+}
+.colorBox_login .title_login{padding-top: 100px; margin-bottom: 25px;}
+.colorBox_login .title_login h2{color:#14233C;}
+.colorBox_login .input_login input{margin:5px 0; border-radius: 5px; width:98%;}
+.colorBox_login .loginWrap .message_error{color:#2991CC;}
+.colorBox_login .forget_login{padding-bottom: 100px;}
+.colorBox_login .forget_login div{display:flex; justify-content: center;}
+
+.main{
+    display:flex; 
+    position: absolute; 
+    /* top:500px;  */
+    width:100%; 
+    /* height:100%; */
+}
 .main .left_section{width:10%; min-width:15%; background-color:#14233C}
 .main .right_section{
     padding:100px;
     width:100%; 
     margin:0 auto;
+    max-width:1900px;
 }
 .main .right_section .title{
     display:flex; 
@@ -105,8 +144,10 @@
 .main .right_section .title h2{color:#14233C;}
 
 /* .main .right_section button{background:white;} */
-    .main .dashBoard h3{display: flex;justify-content: center;align-items: center; width: 100%; height: 100px; background-color:white;}
-.main .dashBoard h3 a{color:#14233C;font-weight: 400; }
+.main .leftMenu.active h3{display: flex;justify-content: center;align-items: center; width: 100%; height: 100px; background-color:white;}
+.main .leftMenu.active h3 a{color:#14233C;font-weight: 400; }
+.main .leftMenu h3{display: flex;justify-content: center;align-items: center; width: 100%; height: 100px;}
+.main .leftMenu h3 a{color:white;font-weight: 400; }
 .main .right_section .title{
     margin:0 auto;
     margin-bottom: 25px;
@@ -129,11 +170,15 @@ tbody tr:hover{background-color: #F5F6F7; cursor: pointer;}
 .main .myData{display:flex; margin:0 auto;}
 .main .folder{width:30%; padding-right:50px;}
 .main .file{width:70%;}
-.file_table th{border-bottom: 1px solid #707070;
+
+/* table */
+.file_table th, .file_upload_table th{border-bottom: 1px solid #707070;
     height: 40px;}
-.file_table{border-top: 1px solid #707070;}
-.file_table td{height: 26px; padding: 7px 0;}
+.file_table, .file_upload_table{border-top: 1px solid #707070;}
+.file_table td, .file_upload_table td{height: 26px; padding: 7px 0;}
 .file_table td:first-child, .file_table td:last-child{display:table-cell; text-align: center;}
+.file_upload_table td:first-child, .file_upload_table td:last-child{display:table-cell; text-align: center;}
+
 
 .request{min-height: 500px; margin-bottom: 100px;}
 .myData .folder .button_folder{display:flex; justify-content: space-between;}
@@ -166,19 +211,49 @@ tbody tr:hover{background-color: #F5F6F7; cursor: pointer;}
 
 /* modal */
 /* #modal_request{} */
-.modal{position: absolute; top:0; left:0; width:100%; height:100%; display:flex; justify-content: center; align-items: center;}
-.modal_overlay{background-color:rgba(0,0,0,0.16); width:100%; height:100%; position: absolute;}
+.modal, .modal_folder, .modal_file, .modal3{position: absolute; top:0; left:0; width:100%; height:100%; display:flex; justify-content: center; align-items: center;}
+.modal_overlay, .modal_overlay_file, .modal_overlay_folder{background-color:rgba(0,0,0,0.16); width:100%; height:100%; position: absolute; top:0; left:0;}
 .modal_content{
     border-radius: 5px;
     background-color: white;
     padding:20px;
     position:relative;
-    width:50%; height:50%; top:0;
+    width:50%; height:50%; 
+    max-width: 1000px;
+    top:0;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
+.modal_content i, .myData i{margin-right:5px;}
 .modal_content .title, .modal_content .content{display:flex; justify-content: space-around;}
-.modal_content .content{height: 80%; align-items: center; width:100%; flex-direction: column;}
-.hidden{display:none;}
+.modal_content .content{
+    height: 75%; 
+    align-items: center;
+    justify-content: center; 
+    width:80%;
+    margin:0 auto; 
+    flex-direction: column;
+}
+.modal_content .inputWrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.modal_content .inputWrap .inputName{width:30%;}
+.modal_content .inputWrap .inputArea{width:70%; display:flex;}
+.modal_content .inputWrap .inputArea input{width:100%;}
+/* .modal_content .inputWrap .inputArea textarea{margin-top:10px;} */
+.modal_content .button {display: flex;
+    justify-content: center;}
+
+
+.modal_folder.hidden2, .hidden, .hidden3{display:none;}
+.closeButton, .closeButton_file, .closeButton_folder{cursor: pointer;}
+
+.DownloadAll{display:flex; justify-content: space-between; width:100%; margin-bottom: 10px;}
+.DownloadAll .selectOption{display:flex;}
+.selectOption div{display:flex; align-items: center;}
 
 /* 테블릿 */
 @media(max-width:1000px){
@@ -206,7 +281,6 @@ tbody tr:hover{background-color: #F5F6F7; cursor: pointer;}
     table.request_table td:nth-child(5):before{content:"Date created: "}
     table.request_table td:nth-child(6):before{content:"status: "}
 
-
     .file_table thead, .file_table colgroup{display: none;}
     .file_table td{display:block; text-align:left;}
     .file_table td:first-child, .file_table td:last-child{border:1px solid #707070;}
@@ -214,6 +288,16 @@ tbody tr:hover{background-color: #F5F6F7; cursor: pointer;}
     .file_table td:nth-child(2):before{content : "file1: "}
     .file_table td:nth-child(3):before{content : "file2: "}
     .file_table td:nth-child(4):before{content : "etc: "}
+
+    .file_upload_table thead, .file_upload_table colgroup{display: none;}
+    .file_upload_table td{display:block; text-align:left;}
+    .file_upload_table td:first-child, .file_upload_table td:last-child{border:1px solid #707070;}
+    .file_upload_table td:before{padding:0 0 0 10px; display:inline-block;margin-right:5px;}
+    .file_upload_table td:nth-child(2):before{content : "Location: "}
+    .file_upload_table td:nth-child(3):before{content : "File Name: "}
+    .file_upload_table td:nth-child(4):before{content : "Size: "}
+    .file_upload_table td:nth-child(5):before{content : "Download: "}
+
 
     .main .folder{padding-right: 30px;}
 
@@ -233,5 +317,16 @@ tbody tr:hover{background-color: #F5F6F7; cursor: pointer;}
     .main .folder {padding-right:0;}
 
     /* modal */
-    .modal_content{width:80%;}
+    .modal_content{width:80%; top:-450px; height:30%;}
+    .modal .inputWrap{flex-direction: column;}
+    .modal .inputArea{flex-direction: column; align-items: center;}
+    .btn.check{margin-left:0; margin-top:10px;}
+    .modal_content .inputWrap .inputName {
+        width: auto; margin-top:10px;
+    }
+
+    /* login */
+    .colorBox_login .loginWrap {width:90%;}
+    .forget_login div{flex-direction: column;}
+    
 }
