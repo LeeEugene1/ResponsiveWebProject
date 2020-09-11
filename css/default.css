@@ -23,7 +23,9 @@ fieldset, img, button{border:0;}
 
 input[type=text]::-ms-clear {display: none;}
 
-select { padding:0 0 0 5px; height:38px; border:1px solid #707070;}
+select { padding:0 0 0 5px; 
+  /* height:38px;  */
+  border:1px solid #707070;}
 textarea,
 input[type="email"],
 input[type="file"],
@@ -46,6 +48,7 @@ button[disabled="disabled"],
 select[disabled="disabled"],
 input[disabled="disabled"] { background:#f5f5f5; border-color:#d4d4d4;}
  
+select,
 input[type="password"],
 input[type="email"],
 input[type="file"],

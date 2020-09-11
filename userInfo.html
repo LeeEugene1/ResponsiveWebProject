@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- <link rel="stylesheet" href="./xeicon/XEIcon-2.2.0 (1)/XEIcon-2.2.0/xeicon.min.css"> -->
+</head>
+<body>
+    <!-- <div class="colorBox"></div> -->
+    <div class="wrap">
+        <header class="header">
+            <div class="account_header">
+                <ul>
+                    <li><a href=""><i class="xi-profile-o"></i>Sign in</a></li>
+                    <!-- <li><a href=""><i class="xi-profile"></i>Nickname</a></li> -->
+                    <!-- <li><a href=""><i class="xi-log-out"></i>Log out</a></li> -->
+                    <li><a href=""><i class="xi-log-in"></i>Log in</a></li>
+                </ul>
+            </div>
+            <div class="menu_header">
+                <h2><a href="">CSK</a></h2>
+                <nav>
+                    <ul>
+                        <li><a href="">Dashboard</a></li>
+                        <li><a href="">Apps</a></li>
+                        <li><a href="">Pipelines</a></li>
+                        <li><a href="">System</a></li>
+                        <li><a href="">Team</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <div class="title_content">
+            <div>
+                <h1>CSK Artificial Intelligence for</h1>
+                <h1>In Silico Drug Discovery</h1>
+            </div>
+        </div>
+    </div>
+
+    <main class="main">
+        <!-- left -->
+        <section class="left_section">
+            <div class="leftMenu">
+                <div>
+                    <h3><a href="dashboard_list.html">DashBoard</a></h3>
+                </div>
+            </div>
+            <div class="leftMenu">
+                <div>
+                    <h3><a href="">Apps</a></h3>
+                </div>
+            </div>
+            <div class="leftMenu">
+                <div>
+                    <h3><a href="">pipelines</a></h3>
+                </div>
+            </div>
+            <div class="leftMenu active">
+                <div class="accordion" onclick="return false">
+                    <div class="accordion_btn">
+                        <h3><a href="">System</a></h3>
+                    </div>
+                    <!-- <div><i class="xi-angle-down"></i></div> -->
+                    <div class="accordion_content">
+                        <h4>User info</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="leftMenu">
+                <div>
+                    <h3><a href="">Teams</a></h3>
+                </div>
+            </div>
+            <div class="leftMenu">
+                <div>
+                    <h3><a href="">Contact</a></h3>
+                </div>
+            </div>
+        </section>
+        
+        <section class="right_section">
+            <!-- userInfo -->
+            <div class="UserInfoWrap">
+                <div class="list_userInfo">
+                    <div class="request">
+                        <div class="title">
+                                <h2>User Info</h2>
+                         </div>
+                        </div>
+                        <div class="search">
+                            <select name="" id="">
+                                <option value="">id</option>
+                                <option value="">email</option>
+                                <option value="">company</option>
+                            </select>
+                            <div class="border_search">
+                                <input type="text" maxlength="100">
+                                <a href=""><i class="xi-search"></i></a>
+                            </div>
+                        </div>
+                        <table class="request_table">
+                            <caption>Request/index, Request name, Dataset, App/Pipeline, Date created, Status</caption>
+                            <colgroup>
+                                <col style="width:10%">
+                                <col style="width:30%">
+                                <col style="width:30%">
+                                <col style="width:30%">
+
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Request name</th>
+                                    <th scope="col">Dataset</th>
+                                    <th scope="col">App/Pipeline</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="position_table">1</td>
+                                    <td>Request name</td>
+                                    <td>Request name</td>
+                                    <td>Request name</td>
+                                   </tr>
+                                <tr>
+                                    <td class="position_table">1</td>
+                                    <td class="">Request name</td>
+                                    <td class="">Request name</td>
+                                    <td class="table_left">Request name</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="pagination">
+                            <div class="page-wrapper">
+                                <ul class="pagination justify-content-center">
+                                    <!-- 이전 페이지 -->
+                                    <li class="page-item prev">
+                                        <a href="" class="page-link"><img src="./img/arrow-first.png" alt=""></a>
+                                    </li>
+                                    <li class="page-item prev">
+                                        <a class="check_" href="" ><img src="./img/arrow-prev.png" alt=""></a>
+                                    </li>
+                                    <!-- 페이지 범위 및 현재 페이지 -->
+                                        <li class="page-item active">
+                                            <span class="page-link"><a href="">1</a></span>
+                                        </li>
+                                        <li class="page-item">
+                                            <span class="page-link"><a href="">2</a></span>
+                                        </li>
+                                    <!-- 다음 페이지 -->
+                                    <li class="page-item next">
+                                        <a class="page-link" href=""><img src="./img/arrow-next.png" alt=""></a>
+                                    </li>
+                                    <li class="page-item next">
+                                        <a href="" class="page-link"><img src="./img/arrow-last.png" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+                <!-- form_userInfo -->
+                <div class="form_userInfo">
+                    <div class="box_userInfo">
+                        <div class="boxWidth">
+                            <div class="buttonGroup">
+                                <ul>
+                                    <li><a href=""><i class="xi-profile-o"></i>New</a></li>
+                                    <li><a href=""><i class="xi-log-in"></i>Update</a></li>
+                                    <li><a href=""><i class="xi-log-in"></i>Delete</a></li>
+                                </ul>
+                            </div>
+                            <div class="inputWrap">
+                                <div class="inputArea">
+                                    <div>
+                                        <i class="xi-check-min" style="color:#F5F6F7;"></i>
+                                        <label for="">id</label>
+                                    </div>
+                                    <input type="text">
+                                </div>
+                                <div class="inputArea">
+                                    <div>
+                                        <i class="xi-check-min"></i>
+                                        <label for="">name</label>
+                                    </div>
+                                    <input type="text">
+                                </div>
+                                <div class="inputArea">
+                                    <div>
+                                        <i class="xi-check-min"></i>
+                                        <label for="">email</label>
+                                    </div>
+                                    <input type="email">
+                                </div>
+                                <div class="inputArea">
+                                    <div>
+                                        <i class="xi-check-min"></i>
+                                        <label for="">password</label>
+                                    </div>
+                                    <input type="password">
+                                </div>
+                                <div class="inputArea">
+                                    <div>
+                                        <i class="xi-check-min"></i>
+                                        <label for="">password repeat</label>
+                                    </div>
+                                    <input type="password">
+                                </div>
+                                <div class="inputArea">
+                                    <div>
+                                        <i class="xi-check-min" style="color:#F5F6F7;"></i>
+                                        <label for="">company</label>
+                                    </div>
+                                    <input type="text">
+                                </div>
+                                <div class="inputArea">
+                                    <div>
+                                        <i class="xi-check-min"></i>
+                                        <label for="">available capacity</label>
+                                    </div>
+                                    <input type="text">
+                                </div>
+                                <div class="inputArea">
+                                    <div>
+                                        <i class="xi-check-min" style="color:#F5F6F7;"></i>
+                                        <label for="">project</label>
+                                    </div>
+                                    <input type="text">
+                                </div>
+                                <div class="inputArea">
+                                    <div>
+                                        <!-- <i class="xi-log-in"></i> -->
+                                        <input type="checkbox" onclick="checkAll(this)">
+                                        <label>authoization</label>
+                                    </div>
+                                    <div class="checkboxWrap">
+                                        <input type="checkbox" id="" name="cb" value="">administrator
+                                        <input type="checkbox" id="" name="cb" value="">user
+                                    </div>
+    
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- <script src="./js/modal.js"></script> -->
+   <script>
+       function checkAll(source){
+           checkboxes = document.getElementsByName('cb');
+           for(var i=0, n=checkboxes.length;i<n;i++){
+               checkboxes[i].checked = source.checked;
+           }
+       }
+
+    //    function accordionEffect(){
+            var acc = document.getElementsByClassName('accordion_btn');
+            for(var i = 0; i<acc.length; i++){
+                acc[i].onclick= function(){
+                    this.classList.toggle('accordion_btn--active');
+                    var content = this.nextSibling;
+                    if(content.style.display === "block"){
+                        content.style.display = "none";
+                    }else{
+                        content.style.display = "block";
+                    }
+                }
+            }
+            this.classList.toggle('accordion_content--active');
+    //    }
+   </script>
+</body>
+</html>

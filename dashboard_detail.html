@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- <link rel="stylesheet" href="./xeicon/XEIcon-2.2.0 (1)/XEIcon-2.2.0/xeicon.min.css"> -->
+</head>
+<body>
+    <!-- <div class="colorBox"></div> -->
+    <div class="wrap">
+        <header class="header">
+            <div class="account_header">
+                <ul>
+                    <li><a href=""><i class="xi-profile-o"></i>Sign in</a></li>
+                    <!-- <li><a href=""><i class="xi-profile"></i>Nickname</a></li> -->
+                    <!-- <li><a href=""><i class="xi-log-out"></i>Log out</a></li> -->
+                    <li><a href=""><i class="xi-log-in"></i>Log in</a></li>
+                </ul>
+            </div>
+            <div class="menu_header">
+                <h2><a href="">CSK</a></h2>
+                <nav>
+                    <ul>
+                        <li><a href="">Dashboard</a></li>
+                        <li><a href="">Apps</a></li>
+                        <li><a href="">Pipelines</a></li>
+                        <li><a href="">Team</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <div class="title_content">
+            <div>
+                <h1>CSK Artificial Intelligence for</h1>
+                <h1>In Silico Drug Discovery</h1>
+            </div>
+        </div>
+    </div>
+
+    <main class="main">
+        <!-- left -->
+        <section class="left_section">
+            <div class="leftMenu active">
+                <div>
+                    <h3><a href="">DashBoard</a></h3>
+                </div>
+            </div>
+            <div class="leftMenu">
+                <div>
+                    <h3><a href="">Apps</a></h3>
+                </div>
+            </div>
+            <div class="leftMenu ">
+                <div>
+                    <h3><a href="">pipelines</a></h3>
+                </div>
+            </div>
+            <div class="leftMenu">
+                <div class="accordion" onclick="return false">
+                    <div class="accordion_btn">
+                        <h3><a href="">System</a></h3>
+                    </div>
+                    <!-- <div><i class="xi-angle-down"></i></div> -->
+                    <div class="accordion_content">
+                        <h4>User info</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="leftMenu">
+                <div>
+                    <h3><a href="">Teams</a></h3>
+                </div>
+            </div>
+            <div class="leftMenu">
+                <div>
+                    <h3><a href="">Contact</a></h3>
+                </div>
+            </div>
+        </section>
+        
+        <!-- right -->
+        <section class="right_section">
+            <!-- request -->
+            <div class="request">
+                <div><a href=""><i class="xi-long-arrow-left"></i> back</a></div>
+                <div class="title">
+                        <div class="titleUpdate" id="modal_request" onclick="return false;"><h2><a href="">request name1111</h2><i class="xi-pen"></i></a></div>
+                <div class="modal hidden">
+                    <div class="modal_overlay"></div>
+                    <div class="modal_content">
+                        <div class="title">
+                            <h1><i class="xi-pen"></i>Request Update</h1>
+                            <div class="closeButton"><i class="xi-close"></i></div>
+                        </div>
+                        <div class="content">
+                            <div class="inputWrap">
+                                <div class="inputName">Name</div>
+                                <div class="inputArea">
+                                    <input type="text" placeholder="Folder name">
+                                    <button class="btn check">Check</button>
+                                </div>
+                            </div>
+                            <div class="inputWrap">
+                                <div class="inputName">Description</div>
+                                <div class="inputArea">
+                                    <!-- <input type="text" placeholder="Folder name"> -->
+                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                    <!-- <button class="btn check">Check</button> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button class="btn create">Create</button>
+                            <button class="btn cancel">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                        <div class="buttonStyle">
+                        <!-- modal_request -->
+                        <button class="btn delete-dark" id="modal_request"><i class="xi-trash"></i><span>Request Delete</span></button>
+                        
+                    </div>
+                </div>
+                <div class="preview">
+                    <div class="formWrap">
+                        <div>
+                            <b>Status</b><span>waiting</span>
+                        </div>
+                        <div>
+                            <b>Pipeline</b><span>Preprocessing</span>
+                        </div>
+                        <div>
+                            <b>Created by</b><span>user</span>
+                        </div>
+                        <div>
+                            <b>Last updated</b><span>2020-09-07 10:32:47</span>
+                        </div>
+                        <div>
+                            <b>created</b><span>2020-09-07 10:32:47</span>
+                        </div>
+                    </div>
+                    <div class="descriptionBlock">
+                        <b>Description</b><span>Elit do incididunt elit irure labore ad eiusmod consequat ut cillum irure. Id pariatur adipisicing occaecat ad laboris sint voluptate est veniam commodo velit irure. Qui eiusmod deserunt laborum ad voluptate non ipsum ex cupidatat deserunt esse qui. Occaecat excepteur do amet adipisicing velit cillum dolore incididunt. Magna ut qui aute labore ea laborum nostrud deserunt ut enim.
+
+Voluptate consequat anim do anim ex id deserunt tempor dolor deserunt deserunt tempor ipsum voluptate. Culpa nostrud consectetur dolore est consectetur laboris. Lorem laboris proident esse eu eiusmod aute nostrud reprehenderit deserunt et mollit consequat sit consequat. Mollit incididunt proident dolore adipisicing dolor Lorem ut ea minim ea magna.
+</span></div>
+
+                </div>
+                <!-- <div class="search">
+                    <div class="border_search">
+                        <input type="text" maxlength="100">
+                        <a href=""><i class="xi-search"></i></a>
+                    </div>
+                </div> -->
+                <div class="DownloadAll">
+                    <div>
+                        <b>Data</b>
+                        <div>
+                            <p>Input data from 'My Data' button and press 'Save' button with selected data.</p>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button class="btn check" id="modal_myData"><i class="xi-view-list"></i>My data</button>
+                        <!-- modal_request -->
+                        
+                        <!-- <div class="titleUpdate" id="modal_request" onclick="return false;"><h2><a href="">request name1111</h2><i class="xi-pen"></i></a></div> -->
+                        <div class="modal_myData hidden4">
+                            <div class="modal_overlay_myData"></div>
+                            <div class="modal_content">
+                                <div class="title">
+                                    <h1><i class="xi-view-list"></i>My data</h1>
+                                    <div class="closeButton_myData"><i class="xi-close"></i></div>
+                                </div>
+                                <div class="content">
+                                    <div class="myData">
+                                        <div class="folder">
+                                            <div class="button_folder">
+                                                <!-- modal_folder -->
+                                                <div class="modal_folder hidden2">
+                                                    <div class="modal_overlay_folder"></div>
+                                                    <div class="modal_content">
+                                                        <div class="title">
+                                                            <h1><i class="xi-folder-add-o"></i>New Folder</h1>
+                                                            <div class="closeButton_folder"><i class="xi-close"></i></div>
+                                                        </div>
+                                                        <div class="content">
+                                                            <div class="inputWrap">
+                                                                <div class="inputName">Name</div>
+                                                                <div class="inputArea">
+                                                                    <input type="text" placeholder="Folder name">
+                                                                    <button class="btn check">Check</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="button">
+                                                            <button class="btn create">Create</button>
+                                                            <button class="btn cancel">Cancel</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="list_folder">
+                                                <ul>
+                                                    <li class="folderSelected active">
+                                                        <a href="">
+                                                            <i class="xi-folder-open"></i> Folder name1
+                                                        </a>
+                                                    </li>
+                                                    <li class="folderSelected">
+                                                        <a href="">
+                                                            <i class="xi-folder-o"></i> Folder name1
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="page-wrapper">
+                                                <ul class="pagination justify-content-center">
+                                                    <!-- 이전 페이지 -->
+                                                    <li class="page-item prev">
+                                                        <a class="check_" href="" ><img src="./img/arrow-prev.png" alt=""></a>
+                                                    </li>
+                                                    <!-- 페이지 범위 및 현재 페이지 -->
+                                                        <li class="page-item active" style="background-color:#2991CC; border:1px solid #2991CC;">
+                                                            <span class="page-link"><a href="">1</a></span>
+                                                        </li>
+                                                        <li class="page-item">
+                                                            <span class="page-link"><a href="">2</a></span>
+                                                        </li>
+                                                    <!-- 다음 페이지 -->
+                                                    <li class="page-item next">
+                                                        <a class="page-link" href=""><img src="./img/arrow-next.png" alt=""></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                        
+                                        </div>
+                                        <div class="file">
+                                            <div class="title">
+                                                <h3><i class="xi-folder-open"></i>Folder Name1</h3>
+                                                <!-- modal_file -->
+                                                <div class="modal_file hidden3">
+                                                    <div class="modal_overlay_file"></div>
+                                                    <div class="modal_content">
+                                                        <div class="title">
+                                                            <h1><i class="xi-file-add-o"></i>New File</h1>
+                                                            <div class="closeButton_file"><i class="xi-close"></i></div>
+                                                        </div>
+                        
+                                                        <div class="content">
+                                                            <div class="DownloadAll">
+                                                                <div class="selectOption">
+                                                                    <select name="" id="">
+                                                                        <option value="">
+                                                                            PDB
+                                                                        </option>
+                                                                    </select>
+                                                                    <div>
+                                                                        <p>total file size:</p>
+                                                                        <p>243.0 KB</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="button">
+                                                                    <button class="btn check">File upload</button>
+                                                                    <button class="btn cancel">Download all</button>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="inputWrap">
+                                                                <table class="file_upload_table">
+                                                                    <caption>file/type,location,fileName, size, download, delete</caption>
+                                                                    <colgroup>
+                                                                        <col style="width:10%">
+                                                                        <col style="width:30%">
+                                                                        <col style="width:20%">
+                                                                        <col style="width:20%">
+                                                                        <col style="width:10%">
+                                                                        <col style="width:10%">
+                                                                    </colgroup>
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th scope="col">Type</th>
+                                                                            <th scope="col">Location</th>
+                                                                            <th scope="col">File Name</th>
+                                                                            <th scope="col">Size</th>
+                                                                            <th scope="col">Download</th>
+                                                                            <th scope="col">Delete</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="position_table">1</td>
+                                                                            <td>Request name</td>
+                                                                            <td>Request name</td>
+                                                                            <td>Request name</td>
+                                                                            <td class="position_table"><i class="xi-file-download-o"></td>
+                                                                            <td class="position_table"><i class="xi-trash"></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="position_table">1</td>
+                                                                            <td class="">Request name</td>
+                                                                            <td class="">Request name</td>
+                                                                            <td class="table_left">Request name</td>
+                                                                            <td class="position_table"><i class="xi-file-download-o"></td>
+                                                                            <td class="position_table"><i class="xi-trash"></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <div class="button">
+                                                            <button class="btn create">Create</button>
+                                                            <button class="btn cancel">Cancel</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>     
+                                            <table class="file_table">
+                                                <caption>My Data/index, file1, file2, etc, delete</caption>
+                                                <colgroup>
+                                                    <col style="width:10%">
+                                                    <col style="width:30%">
+                                                    <col style="width:20%">
+                                                    <col style="width:20%">
+                                                    <col style="width:10%">
+                                                    <col style="width:10%">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">file1</th>
+                                                        <th scope="col">file2</th>
+                                                        <th scope="col">etc</th>
+                                                        <th scope="col">delete</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td class="">Request name</td>
+                                                        <td class="">Request name</td>
+                                                        <td class="">Request name</td>
+                                                        <td class=""><i class="xi-trash"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td class="">Request name</td>
+                                                        <td class="">Request name</td>
+                                                        <td class="">Request name</td>
+                                                        <td class=""><i class="xi-trash"></i></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="page-wrapper">
+                                                <ul class="pagination justify-content-center">
+                                                    <!-- 이전 페이지 -->
+                                                    <li class="page-item prev">
+                                                        <a href="" class="page-link"><img src="./img/arrow-first.png" alt=""></a>
+                                                    </li>
+                                                    <li class="page-item prev">
+                                                        <a class="check_" href="" ><img src="./img/arrow-prev.png" alt=""></a>
+                                                    </li>
+                                                    <!-- 페이지 범위 및 현재 페이지 -->
+                                                        <li class="page-item active">
+                                                            <span class="page-link"><a href="">1</a></span>
+                                                        </li>
+                                                        <li class="page-item">
+                                                            <span class="page-link"><a href="">2</a></span>
+                                                        </li>
+                                                    <!-- 다음 페이지 -->
+                                                    <li class="page-item next">
+                                                        <a class="page-link" href=""><img src="./img/arrow-next.png" alt=""></a>
+                                                    </li>
+                                                    <li class="page-item next">
+                                                        <a href="" class="page-link"><img src="./img/arrow-last.png" alt=""></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="button">
+                                    <button class="btn create">Create</button>
+                                    <button class="btn cancel">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="btn cancel">Save</button>
+                    </div>
+                </div>
+                <table class="request_table">
+                    <caption>Data/index, FolderName, FileName, Order, delete</caption>
+                    <colgroup>
+                        <col style="width:10%">
+                        <col style="width:10%">
+                        <col style="width:30%">
+                        <col style="width:30%">
+                        <col style="width:10%">
+                        <col style="width:10%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col"><input type="checkbox"></th>
+                            <th scope="col">#</th>
+                            <th scope="col">Folder name</th>
+                            <th scope="col">File name</th>
+                            <th scope="col">Order</th>
+                            <th scope="col">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="position_table"><input type="checkbox"></td>
+                            <td class="position_table">1</td>
+                            <td>Request name</td>
+                            <td>Request name</td>
+                            <td class="position_table"><input type="text" value="1"></td>
+                          <td class="position_table"><a href=""><i class="xi-trash"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td class="position_table"><input type="checkbox"></td>
+                            <td class="position_table">2</td>
+                            <td class="">Request name</td>
+                            <td class="table_left">Request name</td>
+                            <td class="position_table"><input type="text" value="1"></td>
+                          <td class="position_table"><a href=""><i class="xi-trash"></i></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </div>
+
+            <!-- pipelines -->
+            <div class="pipelines">
+                <div><b>Pipeline</b></div> 
+                <div>Select a pipeline and options from each API. (check results on Application Options)</div>
+            </div>
+
+            <!-- pipelines -->
+            <ol class="arrowBox">
+                <div class="pipelinesWrap">
+                    <div class="pipelinesList">
+                    <li class="">
+                        <span>Pipeline</span>
+                    </li>
+                        <div class="pipelineSelect">
+                            <div>
+                                <div class="groupName"><b>Group1</b></div>
+                                <div class="content active">
+                                    <div class="pipePices short"></div>
+                                    <div class="pipePices long"><a href="">Preprocessing<i class="xi-arrow-right"></i></a></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="groupName"><b>Group2</b></div>
+                                <div class="content">
+                                    <div class="pipePices short"></div>
+                                    <div class="pipePices long"><a href="">Target identification<i class="xi-arrow-right"></i></a></div>
+                                </div>
+                                <div class="content">
+                                    <div class="pipePices short"></div>
+                                    <div class="pipePices long"><a href="">Target identification<i class="xi-arrow-right"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                    
+                    <!-- <div class="pipelinesList">
+                        <li class="navy">
+                            <span>API</span>
+                        </li>
+                        <div>
+                            <div class="pipePices">
+                                <img src="./img/pipeline.png" alt="">
+                                <div class="listWrap">
+                                    <div class="title"><span>Preprocessing</span></div>
+                                </div>
+                            </div>
+                            <div class="pipePices">
+                                <img src="./img/pipeline2.png" alt="">
+                                <div class="listWrap">
+                                    <div class="APIList">
+                                        <input type="checkbox">
+                                        <span>Hepatotoxicity</span>
+                                        <p>Mollit incididunt non duis minim fugiat.Mollit incididunt non duis minim fugiat.Mollit incididunt non duis minim fugiat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pipePices">
+                                <img src="./img/pipeline2.png" alt="">
+                                <div class="listWrap">
+                                    <div class="APIList">
+                                        <input type="checkbox">
+                                        <span>Hepatotoxicity</span>
+                                        <p>Mollit incididunt non duis minim fugiat.Mollit incididunt non duis minim fugiat.Mollit incididunt non duis minim fugiat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pipePices">
+                                <img src="./img/pipeline2.png" alt="">
+                                <div class="listWrap">
+                                    <div class="APIList">
+                                        <input type="checkbox">
+                                        <span>Hepatotoxicity</span>
+                                        <p>Mollit incididunt non duis minim fugiat.Mollit incididunt non duis minim fugiat.Mollit incididunt non duis minim fugiat.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>   -->
+
+                    <div class="pipelinesList">
+                        <li class="navy">
+                            <span>API</span>
+                        </li>
+                        <div>
+                            <div class="pipePices">
+                                <img src="./img/pipeline0.png" alt="">
+                                <div class="listWrap">
+                                    <div class="title"><span>Select a pipeline!</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="pipelinesList">
+                        <li class="darkNavy">
+                            <span>Options</span>
+                        </li>
+                        <!-- tabs -->
+                        <div class="tab">
+                            <button class="tablinks" onclick="openTab(event, 'tab1')">tabMenu1</button>
+                            <button class="tablinks" onclick="openTab(event, 'tab2')">tabMenu2</button>
+                        </div>
+                        <!-- tab1 content -->
+                        <div id="tab1" class="tabcontent">
+                            <div class="optionsWrap">
+                                <div class="content_options">
+                                    <!-- select option -->
+                                    <div class="optionType">
+                                        <b>ForceField1</b>
+                                        <p>메시지는 여기에</p>
+                                        <select name="" id="">
+                                            <option value="">Field1</option>
+                                        </select>
+                                    </div>
+                                    <!-- text -->
+                                    <div class="optionType">
+                                        <b>ForceField1</b>
+                                        <p>메시지는 여기에</p>
+                                        <input type="text">
+                                    </div>
+
+                                    <!-- text -->
+                                    <div class="optionType">
+                                        <b>ForceField1</b>
+                                        <p>메시지는 여기에</p>
+                                        <input type="text">
+                                    </div>
+
+                                    <!-- textarea -->
+                                    <div class="optionType">
+                                        <b>ForceField1</b>
+                                        <p>메시지는 여기에</p>
+                                        <textarea name="" id="" cols="20" rows="5"></textarea>
+                                    </div>
+                                    <!-- input search -->
+                                    <div class="optionType">
+                                        <b>ForceField1</b>
+                                        <p>메시지는 여기에</p>
+                                        <div class="search">
+                                            <div class="searchWrap">
+                                                <input type="text" maxlength="100">
+                                                <a href="" id="modal_search" onclick="return false;"><i class="xi-search"></i></a>
+                                                <div class="modal_search hidden5">
+                                                    <div class="modal_overlay_search"></div>
+                                                    <div class="modal_content">
+                                                        <div class="title">
+                                                            <h1>Document List</h1>
+                                                            <div class="closeButton_search"><i class="xi-close"></i></div>
+                                                        </div>
+                                                        <div class="content">
+                                                            <div class="inputWrap">
+                                                                <table class="file_upload_table">
+                                                                    <caption>file/type,location,fileName, size, download, delete</caption>
+                                                                    <colgroup>
+                                                                        <col style="width:90%">
+                                                                        <col style="width:10%">
+                                                                    </colgroup>
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th scope="col">Data path</th>
+                                                                            <th scope="col">Action</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>Request name</td>
+                                                                            <td class="position_table"><button class="btn create">Action</button></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td >Request name</td>
+                                                                            <td class="position_table"><button class="btn create">Action</button></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- checkbox -->
+                                    <div class="optionType">
+                                        <b>ForceField1</b>
+                                        <p>메시지는 여기에</p>
+                                        <div style="display: flex; align-items: center; margin-right:5px;">
+                                            <input type="checkbox" id="chb1">
+                                            <label for="chb1">체크박스</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- radio -->
+                                    <div class="optionType">
+                                        <b>ForceField1</b>
+                                        <p>메시지는 여기에</p>
+                                        <div style="display: flex; align-items: center; margin-right:5px;">
+                                            <input type="radio" id="radio1" name="" value="">
+                                            <label for="radio1">라디오버튼</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="btnWrap">
+                                        <button class="btn cancel">Select</button>
+                                        <button class="btn check">Release</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- tab2 content -->
+                        <div id="tab2" class="tabcontent">
+                            <div class="optionsWrap">
+                                <div class="content_options">
+                                    <b>ForceField2</b>
+                                    <p>Select the force Field</p>
+                                    <select name="" id="">
+                                        <option value="">Field1</option>
+                                    </select>
+                                    <div class="btnWrap">
+                                        <button class="btn cancel">Select</button>
+                                        <button class="btn check">Release</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                <div class="table_options">
+                                    <b>Application Options</b>
+                                    <div style="max-width: 500px; height:150px; overflow:auto;">
+                                        <!-- <caption>Application Options</caption> -->
+                                        <table class="request_table">
+                                            <colgroup>
+                                                <col style="width:25%">
+                                                <col style="width:25%">
+                                                <col style="width:25%">
+                                                <col style="width:25%">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Folder name</th>
+                                                    <th scope="col">File name</th>
+                                                    <th scope="col">Order</th>
+                                                    <th scope="col">Delete</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Request name</td>
+                                                    <td>Request name</td>
+                                                    <td>Request name</td>
+                                                    <td>Request name</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Request name</td>
+                                                    <td>Request name</td>
+                                                    <td>Request name</td>
+                                                    <td>Request name</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                        </div> 
+                </div>
+            </ol>
+            <div class="btnWrap">
+                <button class="btn create">Run</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/modal.js"></script>
+    <!-- My data 가 modal.js에서 안먹어서 뺏어요.. -->
+    <script>
+        const open4 = document.querySelector('#modal_myData');
+        var modal4 = document.querySelector('.modal_myData');
+        var overlay4 = document.querySelector('.modal_overlay_myData');
+        var close4 = document.querySelector('.closeButton_myData');
+
+        open4.addEventListener('click', function(){
+            modal4.classList.remove('hidden4');
+        });
+        close4.addEventListener('click', function(){
+            modal4.classList.add('hidden4');
+        });
+        document.addEventListener('click', function(e){
+            if(e.target == overlay4){
+                modal4.classList.add('hidden4');
+            }
+        });
+    </script>
+
+    <!-- accordion -->
+    <script>
+        var acc = document.getElementsByClassName('accordion_btn');
+            for(var i = 0; i<acc.length; i++){
+                acc[i].onclick= function(){
+                    this.classList.toggle('accordion_btn--active');
+                    var content = this.nextSibling;
+                    if(content.style.display === "block"){
+                        content.style.display = "none";
+                    }else{
+                        content.style.display = "block";
+                    }
+                }
+            }
+            // this.classList.toggle('accordion_content--active');
+    </script>
+    
+    <script>
+        function openTab(evt, name){
+            var tab = document.getElementsByClassName("tabcontent");
+            for(var i = 0; i<tab.length; i++){
+                tab[i].style.display = "none";
+            }
+            var tablinks = document.getElementsByClassName('tablinks');
+            for(var i=0; i<tablinks.length; i++){
+                tablinks[i].className = tablinks[i].className.replace(" active" , "");
+            }
+            document.getElementById(name).style.display = "block";
+            evt.currentTarget.className += " active"
+        }
+    </script>
+
+    <script>
+        
+    //modal_search
+        var open5 = document.querySelector('#modal_search');
+        var modal5 = document.querySelector('.modal_search');
+        var overlay5 = document.querySelector('.modal_overlay_search');
+        var close5 = document.querySelector('.closeButton_search');
+        open5.addEventListener('click', function(){
+            modal5.classList.remove('hidden5');
+        })
+        close5.addEventListener('click', function(){
+            modal5.classList.add('hidden5');
+        })
+        document.addEventListener('click', function(e){
+            if(e.target == overlay5){
+                modal5.classList.add('hidden5');
+            }
+        })
+
+    </script>
+</body>
+</html>

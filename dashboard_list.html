@@ -19,20 +19,25 @@
                     <li><a href=""><i class="xi-profile-o"></i>Sign in</a></li>
                     <!-- <li><a href=""><i class="xi-profile"></i>Nickname</a></li> -->
                     <!-- <li><a href=""><i class="xi-log-out"></i>Log out</a></li> -->
-                    <li><a href=""><i class="xi-log-in"></i>Log in</a></li>
+                    <li><a href="./login.html"><i class="xi-log-in"></i>Log in</a></li>
                 </ul>
             </div>
             <div class="menu_header">
                 <h2><a href="">CSK</a></h2>
-                <nav>
+                <nav class="nav-links">
                     <ul>
-                        <li><a href="">Dashboard</a></li>
+                        <li><a href="./dashboard_list.html">Dashboard</a></li>
                         <li><a href="">Apps</a></li>
                         <li><a href="">Pipelines</a></li>
                         <li><a href="">Team</a></li>
                         <li><a href="">Contact</a></li>
                     </ul>
                 </nav>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
             </div>
         </header>
         
@@ -274,7 +279,6 @@
                                     <h1><i class="xi-file-add-o"></i>New File</h1>
                                     <div class="closeButton_file"><i class="xi-close"></i></div>
                                 </div>
-
                                 <div class="content">
                                     <div class="DownloadAll">
                                         <div class="selectOption">
@@ -293,7 +297,6 @@
                                             <button class="btn cancel">Download all</button>
                                         </div>
                                     </div>
-                                    
                                     <div class="inputWrap">
                                         <table class="file_upload_table">
                                             <caption>file/type,location,fileName, size, download, delete</caption>
@@ -405,10 +408,28 @@
                         </ul>
                     </div>
             </div>
+            </div>
+            
         </section>
     </main>
 
-    <script src="./modal.js"></script>
-   
+    <script src="./js/modal.js"></script>
+    <!-- menu -->
+    <script>
+        var burger = document.querySelector('.burger')
+        var nav = document.querySelector('.nav-links')
+
+        var b1 = document.querySelector('.line1');
+        var b2 = document.querySelector('.line2');
+        var b3 = document.querySelector('.line3');
+
+        burger.addEventListener('click',function(){
+            nav.classList.toggle('nav-active');
+            b1.classList.toggle('active');
+            b2.classList.toggle('active');
+            b3.classList.toggle('active');
+        })
+        navSlide();
+    </script>
 </body>
 </html>
