@@ -25,6 +25,11 @@
                 <h2><a href="">CSK</a></h2>
                 <nav class="nav-links">
                     <ul>
+                        <li class="li-hidden"><a href=""></i>Sign in</a></li>
+                        <!-- <li hidden><a href=""><i class="xi-profile"></i>Nickname</a></li> -->
+                        <li class="li-hidden"><a href="./login.html">Log in</a></li>
+                        <!-- <li hidden><a href=""><i class="xi-log-out"></i>Log out</a></li> -->
+
                         <li><a href="./dashboard_list.html">Dashboard</a></li>
                         <li><a href="">Apps</a></li>
                         <li><a href="">Pipelines</a></li>
@@ -132,14 +137,27 @@
         var b1 = document.querySelector('.line1');
         var b2 = document.querySelector('.line2');
         var b3 = document.querySelector('.line3');
-    
+
         burger.addEventListener('click',function(){
             nav.classList.toggle('nav-active');
             b1.classList.toggle('active');
             b2.classList.toggle('active');
             b3.classList.toggle('active');
         })
-        navSlide();
+
+        window.addEventListener('resize', function(){
+            nav.classList.remove('nav-active');
+            b1.classList.remove('active');
+            b2.classList.remove('active');
+            b3.classList.remove('active');
+        })
+
+        window.addEventListener('scroll', function(){
+            nav.classList.remove('nav-active');
+            b1.classList.remove('active');
+            b2.classList.remove('active');
+            b3.classList.remove('active');
+        })
     </script>
 </body>
 </html>
