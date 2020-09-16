@@ -35,6 +35,11 @@
                         <li><a href="">Pipelines</a></li>
                         <li><a href="">Team</a></li>
                         <li><a href="">Contact</a></li>
+                        <li class="hamberger-System hover"><a href="">System</a>
+                            <ul class="hamberger-System-menu">
+                                <li><a href="">User info</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
                 <div class="burger">
@@ -133,10 +138,16 @@
     <script>
         var burger = document.querySelector('.burger')
         var nav = document.querySelector('.nav-links')
+        // var systemMenu = document.querySelector('.hamberger-System');
+        // var systemMenuMouseover = document.querySelector('.hamberger-System-menu');
     
         var b1 = document.querySelector('.line1');
         var b2 = document.querySelector('.line2');
         var b3 = document.querySelector('.line3');
+
+        // systemMenu.addEventListener('mouseover', function(){
+        //     systemMenuMouseover.classList.add('mouseover')
+        // })
 
         burger.addEventListener('click',function(){
             nav.classList.toggle('nav-active');

@@ -13,6 +13,7 @@
 <body>
     <!-- <div class="colorBox"></div> -->
     <div class="wrap">
+        <!-- header -->
         <header class="header">
             <div class="account_header">
                 <ul>
@@ -26,6 +27,11 @@
                 <h2><a href="">CSK</a></h2>
                 <nav class="nav-links">
                     <ul>
+                        <li class="li-hidden"><a href=""></i>Sign in</a></li>
+                        <!-- <li hidden><a href=""><i class="xi-profile"></i>Nickname</a></li> -->
+                        <li class="li-hidden"><a href="./login.html">Log in</a></li>
+                        <!-- <li hidden><a href=""><i class="xi-log-out"></i>Log out</a></li> -->
+
                         <li><a href="./dashboard_list.html">Dashboard</a></li>
                         <li><a href="">Apps</a></li>
                         <li><a href="">Pipelines</a></li>
@@ -80,7 +86,7 @@
                         <button class="btn new" id="modal_request"><i class="xi-plus-circle-o"></i>New Request</button>
                         <div class="modal hidden">
                             <div class="modal_overlay"></div>
-                            <div class="modal_content">
+                            <div class="modal_content_request">
                                 <div class="title">
                                     <h1><i class="xi-plus-circle-o"></i>New Request</h1>
                                     <div class="closeButton"><i class="xi-close"></i></div>
@@ -209,7 +215,7 @@
                         </div>
                         <div class="modal_folder hidden2">
                             <div class="modal_overlay_folder"></div>
-                            <div class="modal_content">
+                            <div class="modal_content_folder">
                                 <div class="title">
                                     <h1><i class="xi-folder-add-o"></i>New Folder</h1>
                                     <div class="closeButton_folder"><i class="xi-close"></i></div>
@@ -274,7 +280,7 @@
                         <!-- modal_file -->
                         <div class="modal_file hidden3">
                             <div class="modal_overlay_file"></div>
-                            <div class="modal_content">
+                            <div class="modal_content_file">
                                 <div class="title">
                                     <h1><i class="xi-file-add-o"></i>New File</h1>
                                     <div class="closeButton_file"><i class="xi-close"></i></div>
@@ -418,7 +424,7 @@
     <script>
         var burger = document.querySelector('.burger')
         var nav = document.querySelector('.nav-links')
-
+    
         var b1 = document.querySelector('.line1');
         var b2 = document.querySelector('.line2');
         var b3 = document.querySelector('.line3');
@@ -429,7 +435,20 @@
             b2.classList.toggle('active');
             b3.classList.toggle('active');
         })
-        navSlide();
+
+        window.addEventListener('resize', function(){
+            nav.classList.remove('nav-active');
+            b1.classList.remove('active');
+            b2.classList.remove('active');
+            b3.classList.remove('active');
+        })
+
+        window.addEventListener('scroll', function(){
+            nav.classList.remove('nav-active');
+            b1.classList.remove('active');
+            b2.classList.remove('active');
+            b3.classList.remove('active');
+        })
     </script>
 </body>
 </html>

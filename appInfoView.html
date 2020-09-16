@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- <link rel="stylesheet" href="./xeicon/XEIcon-2.2.0 (1)/XEIcon-2.2.0/xeicon.min.css"> -->
+</head>
+<body>
+    <!-- <div class="colorBox"></div> -->
+    <div class="wrap">
+        <!-- header -->
+        <header class="header">
+            <div class="account_header">
+                <ul>
+                    <li><a href=""><i class="xi-profile-o"></i>Sign in</a></li>
+                    <!-- <li><a href=""><i class="xi-profile"></i>Nickname</a></li> -->
+                    <!-- <li><a href=""><i class="xi-log-out"></i>Log out</a></li> -->
+                    <li><a href="./login.html"><i class="xi-log-in"></i>Log in</a></li>
+                </ul>
+            </div>
+            <div class="menu_header">
+                <h2><a href="">CSK</a></h2>
+                <nav class="nav-links">
+                    <ul>
+                        <li class="li-hidden"><a href=""></i>Sign in</a></li>
+                        <!-- <li hidden><a href=""><i class="xi-profile"></i>Nickname</a></li> -->
+                        <li class="li-hidden"><a href="./login.html">Log in</a></li>
+                        <!-- <li hidden><a href=""><i class="xi-log-out"></i>Log out</a></li> -->
+
+                        <li><a href="./dashboard_list.html">Dashboard</a></li>
+                        <li><a href="">Apps</a></li>
+                        <li><a href="">Pipelines</a></li>
+                        <li><a href="">Team</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="title_content">
+            <div>
+                <h1>CSK Artificial Intelligence for</h1>
+                <h1>In Silico Drug Discovery</h1>
+            </div>
+        </div>
+    </div>
+
+    <main class="main">
+        <!-- left -->
+        <section class="left_section">
+            <div class="leftMenu">
+                <div>
+                    <h3><a href="">DashBoard</a></h3>
+                </div>
+            </div>
+            <div class="leftMenu active">
+                <div>
+                    <h3><a href="">Apps</a></h3>
+                </div>
+            </div>
+            <div class="leftMenu">
+                <div>
+                    <h3><a href="">pipelines</a></h3>
+                </div>
+            </div>
+            <div class="leftMenu">
+                <div class="accordion" onclick="return false">
+                    <div class="accordion_btn">
+                        <h3><a href="">System</a></h3>
+                    </div>
+                    <!-- <div><i class="xi-angle-down"></i></div> -->
+                    <div class="accordion_content">
+                        <h4>User info</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="leftMenu">
+                <div>
+                    <h3><a href="">Teams</a></h3>
+                </div>
+            </div>
+            <div class="leftMenu">
+                <div>
+                    <h3><a href="">Contact</a></h3>
+                </div>
+            </div>
+        </section>
+        
+        <!-- right -->
+        <section class="right_section">
+            <div class="appsInfo">
+                <div><a href=""><i class="xi-long-arrow-left"></i> back</a></div>
+                <div class="title">
+                    <h2>Apps info</h2>
+                </div>
+            </div>
+            <div class="preview">
+                <div class="appInfoWrap">
+                    <!-- <div>
+                        <b>Status</b><span>waiting</span>
+                    </div>
+                    <div>
+                        <b>Pipeline</b><span>Preprocessing</span>
+                    </div>
+                    <div>
+                        <b>Created by</b><span>user</span>
+                    </div>
+                    <div>
+                        <b>Last updated</b><span>2020-09-07 10:32:47</span>
+                    </div>
+                    <div>
+                        <b>created</b><span>2020-09-07 10:32:47</span>
+                    </div> -->
+                    <div>
+                        <img src="img/201510161506c30889f780_BLAST.png" alt="">
+                    </div>
+                    <div>
+                        <div>
+                            <b>Last version</b><span>2020-09-07 10:32:47</span>
+                        </div>                        
+                        <div>
+                            <b>Last version date</b><span>2020-09-07 10:32:47</span>
+                        </div>      
+                        <div class="descriptionBlock">
+                            <b>Description</b><span>Elit deserunt ea magna. Elit deserunt ea magna. Elit deserunt ea magna. Elit deserunt ea magna. Elit deserunt ea magna. Elit deserunt ea magna. Elit deserunt ea magna. Elit deserunt ea magna.Elit deserunt ea magna. Elit deserunt ea magna. Elit deserunt ea magna. Elit deserunt ea magna.Elit deserunt ea magna. Elit deserunt ea magna. Elit deserunt ea magna. Elit deserunt ea magna.Elit deserunt ea magna. Elit deserunt ea magna. Elit deserunt ea magna. Elit deserunt ea magna. </span></div>                   
+                    </div>
+                    
+                </div>
+                
+
+            </div>
+            <div class="appInfoContent">
+                <b>title</b>
+                <div>
+                    <p>Content Input data from 'My Data' button and press 'Save' button with selected data.</p>
+                </div>
+                <img src="img/banner1.png" alt="">
+            </div>
+        </section>
+        
+    </main>
+
+    <script src="./js/modal.js"></script>
+    <!-- My data 가 modal.js에서 안먹어서 뺏어요.. -->
+    <script>
+        const open4 = document.querySelector('#modal_myData');
+        var modal4 = document.querySelector('.modal_myData');
+        var overlay4 = document.querySelector('.modal_overlay_myData');
+        var close4 = document.querySelector('.closeButton_myData');
+
+        open4.addEventListener('click', function(){
+            modal4.classList.remove('hidden4');
+        });
+        close4.addEventListener('click', function(){
+            modal4.classList.add('hidden4');
+        });
+        document.addEventListener('click', function(e){
+            if(e.target == overlay4){
+                modal4.classList.add('hidden4');
+            }
+        });
+    </script>
+
+    <!-- accordion -->
+    <script>
+        var acc = document.getElementsByClassName('accordion_btn');
+            for(var i = 0; i<acc.length; i++){
+                acc[i].onclick= function(){
+                    this.classList.toggle('accordion_btn--active');
+                    var content = this.nextSibling;
+                    if(content.style.display === "block"){
+                        content.style.display = "none";
+                    }else{
+                        content.style.display = "block";
+                    }
+                }
+            }
+            // this.classList.toggle('accordion_content--active');
+    </script>
+    
+    <script>
+        function openTab(evt, name){
+            var tab = document.getElementsByClassName("tabcontent");
+            for(var i = 0; i<tab.length; i++){
+                tab[i].style.display = "none";
+            }
+            var tablinks = document.getElementsByClassName('tablinks');
+            for(var i=0; i<tablinks.length; i++){
+                tablinks[i].className = tablinks[i].className.replace(" active" , "");
+            }
+            document.getElementById(name).style.display = "block";
+            evt.currentTarget.className += " active"
+        }
+    </script>
+
+    <script>
+        
+    //modal_search
+        var open5 = document.querySelector('#modal_search');
+        var modal5 = document.querySelector('.modal_search');
+        var overlay5 = document.querySelector('.modal_overlay_search');
+        var close5 = document.querySelector('.closeButton_search');
+        open5.addEventListener('click', function(){
+            modal5.classList.remove('hidden5');
+        })
+        close5.addEventListener('click', function(){
+            modal5.classList.add('hidden5');
+        })
+        document.addEventListener('click', function(e){
+            if(e.target == overlay5){
+                modal5.classList.add('hidden5');
+            }
+        })
+
+        
+    </script>
+    <!-- menu -->
+    <script>
+        var burger = document.querySelector('.burger')
+        var nav = document.querySelector('.nav-links')
+    
+        var b1 = document.querySelector('.line1');
+        var b2 = document.querySelector('.line2');
+        var b3 = document.querySelector('.line3');
+
+        burger.addEventListener('click',function(){
+            nav.classList.toggle('nav-active');
+            b1.classList.toggle('active');
+            b2.classList.toggle('active');
+            b3.classList.toggle('active');
+        })
+
+        window.addEventListener('resize', function(){
+            nav.classList.remove('nav-active');
+            b1.classList.remove('active');
+            b2.classList.remove('active');
+            b3.classList.remove('active');
+        })
+
+        window.addEventListener('scroll', function(){
+            nav.classList.remove('nav-active');
+            b1.classList.remove('active');
+            b2.classList.remove('active');
+            b3.classList.remove('active');
+        })
+    </script>
+</body>
+</html>

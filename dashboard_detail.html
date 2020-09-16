@@ -13,26 +13,37 @@
 <body>
     <!-- <div class="colorBox"></div> -->
     <div class="wrap">
+        <!-- header -->
         <header class="header">
             <div class="account_header">
                 <ul>
                     <li><a href=""><i class="xi-profile-o"></i>Sign in</a></li>
                     <!-- <li><a href=""><i class="xi-profile"></i>Nickname</a></li> -->
                     <!-- <li><a href=""><i class="xi-log-out"></i>Log out</a></li> -->
-                    <li><a href=""><i class="xi-log-in"></i>Log in</a></li>
+                    <li><a href="./login.html"><i class="xi-log-in"></i>Log in</a></li>
                 </ul>
             </div>
             <div class="menu_header">
                 <h2><a href="">CSK</a></h2>
-                <nav>
+                <nav class="nav-links">
                     <ul>
-                        <li><a href="">Dashboard</a></li>
+                        <li class="li-hidden"><a href=""></i>Sign in</a></li>
+                        <!-- <li hidden><a href=""><i class="xi-profile"></i>Nickname</a></li> -->
+                        <li class="li-hidden"><a href="./login.html">Log in</a></li>
+                        <!-- <li hidden><a href=""><i class="xi-log-out"></i>Log out</a></li> -->
+
+                        <li><a href="./dashboard_list.html">Dashboard</a></li>
                         <li><a href="">Apps</a></li>
                         <li><a href="">Pipelines</a></li>
                         <li><a href="">Team</a></li>
                         <li><a href="">Contact</a></li>
                     </ul>
                 </nav>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
             </div>
         </header>
         
@@ -92,42 +103,39 @@
                 <div><a href=""><i class="xi-long-arrow-left"></i> back</a></div>
                 <div class="title">
                         <div class="titleUpdate" id="modal_request" onclick="return false;"><h2><a href="">request name1111</h2><i class="xi-pen"></i></a></div>
-                <div class="modal hidden">
-                    <div class="modal_overlay"></div>
-                    <div class="modal_content">
-                        <div class="title">
-                            <h1><i class="xi-pen"></i>Request Update</h1>
-                            <div class="closeButton"><i class="xi-close"></i></div>
-                        </div>
-                        <div class="content">
-                            <div class="inputWrap">
-                                <div class="inputName">Name</div>
-                                <div class="inputArea">
-                                    <input type="text" placeholder="Folder name">
-                                    <button class="btn check">Check</button>
+                    <div class="modal hidden">
+                        <div class="modal_overlay"></div>
+                        <div class="modal_content_request">
+                            <div class="title">
+                                <h1><i class="xi-pen"></i>Request Update</h1>
+                                <div class="closeButton"><i class="xi-close"></i></div>
+                            </div>
+                            <div class="content">
+                                <div class="inputWrap">
+                                    <div class="inputName">Name</div>
+                                    <div class="inputArea">
+                                        <input type="text" placeholder="Folder name">
+                                        <button class="btn check">Check</button>
+                                    </div>
+                                </div>
+                                <div class="inputWrap">
+                                    <div class="inputName">Description</div>
+                                    <div class="inputArea">
+                                        <!-- <input type="text" placeholder="Folder name"> -->
+                                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                                        <!-- <button class="btn check">Check</button> -->
+                                    </div>
                                 </div>
                             </div>
-                            <div class="inputWrap">
-                                <div class="inputName">Description</div>
-                                <div class="inputArea">
-                                    <!-- <input type="text" placeholder="Folder name"> -->
-                                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                                    <!-- <button class="btn check">Check</button> -->
-                                </div>
+                            <div class="button">
+                                <button class="btn create">Create</button>
+                                <button class="btn cancel">Cancel</button>
                             </div>
-                        </div>
-                        <div class="button">
-                            <button class="btn create">Create</button>
-                            <button class="btn cancel">Cancel</button>
                         </div>
                     </div>
-                </div>
-
-
-                        <div class="buttonStyle">
+                    <div class="buttonStyle">
                         <!-- modal_request -->
                         <button class="btn delete-dark" id="modal_request"><i class="xi-trash"></i><span>Request Delete</span></button>
-                        
                     </div>
                 </div>
                 <div class="preview">
@@ -175,7 +183,7 @@ Voluptate consequat anim do anim ex id deserunt tempor dolor deserunt deserunt t
                         <!-- <div class="titleUpdate" id="modal_request" onclick="return false;"><h2><a href="">request name1111</h2><i class="xi-pen"></i></a></div> -->
                         <div class="modal_myData hidden4">
                             <div class="modal_overlay_myData"></div>
-                            <div class="modal_content">
+                            <div class="modal_content_myData">
                                 <div class="title">
                                     <h1><i class="xi-view-list"></i>My data</h1>
                                     <div class="closeButton_myData"><i class="xi-close"></i></div>
@@ -187,7 +195,7 @@ Voluptate consequat anim do anim ex id deserunt tempor dolor deserunt deserunt t
                                                 <!-- modal_folder -->
                                                 <div class="modal_folder hidden2">
                                                     <div class="modal_overlay_folder"></div>
-                                                    <div class="modal_content">
+                                                    <div class="modal_content_folder">
                                                         <div class="title">
                                                             <h1><i class="xi-folder-add-o"></i>New Folder</h1>
                                                             <div class="closeButton_folder"><i class="xi-close"></i></div>
@@ -249,7 +257,7 @@ Voluptate consequat anim do anim ex id deserunt tempor dolor deserunt deserunt t
                                                 <!-- modal_file -->
                                                 <div class="modal_file hidden3">
                                                     <div class="modal_overlay_file"></div>
-                                                    <div class="modal_content">
+                                                    <div class="modal_content_file">
                                                         <div class="title">
                                                             <h1><i class="xi-file-add-o"></i>New File</h1>
                                                             <div class="closeButton_file"><i class="xi-close"></i></div>
@@ -449,7 +457,7 @@ Voluptate consequat anim do anim ex id deserunt tempor dolor deserunt deserunt t
             <ol class="arrowBox">
                 <div class="pipelinesWrap">
                     <div class="pipelinesList">
-                    <li class="">
+                    <li class="arrow">
                         <span>Pipeline</span>
                     </li>
                         <div class="pipelineSelect">
@@ -474,8 +482,8 @@ Voluptate consequat anim do anim ex id deserunt tempor dolor deserunt deserunt t
                         </div>
                     </div>   
                     
-                    <!-- <div class="pipelinesList">
-                        <li class="navy">
+                    <div class="pipelinesList">
+                        <li class="arrow navy">
                             <span>API</span>
                         </li>
                         <div>
@@ -515,12 +523,16 @@ Voluptate consequat anim do anim ex id deserunt tempor dolor deserunt deserunt t
                                     </div>
                                 </div>
                             </div>
+                            <div class="btnWrap">
+                                <button class="btn create">Run</button>
+                                <button class="btn cancel">Stop</button>
+                            </div>
 
                         </div>
-                    </div>   -->
+                    </div>  
 
-                    <div class="pipelinesList">
-                        <li class="navy">
+                    <!-- <div class="pipelinesList">
+                        <li class="arrow navy">
                             <span>API</span>
                         </li>
                         <div>
@@ -531,10 +543,10 @@ Voluptate consequat anim do anim ex id deserunt tempor dolor deserunt deserunt t
                                 </div>
                             </div>
                         </div>
-                    </div>  
+                    </div>   -->
 
                     <div class="pipelinesList">
-                        <li class="darkNavy">
+                        <li class="arrow darkNavy">
                             <span>Options</span>
                         </li>
                         <!-- tabs -->
@@ -584,7 +596,7 @@ Voluptate consequat anim do anim ex id deserunt tempor dolor deserunt deserunt t
                                                 <a href="" id="modal_search" onclick="return false;"><i class="xi-search"></i></a>
                                                 <div class="modal_search hidden5">
                                                     <div class="modal_overlay_search"></div>
-                                                    <div class="modal_content">
+                                                    <div class="modal_content_search">
                                                         <div class="title">
                                                             <h1>Document List</h1>
                                                             <div class="closeButton_search"><i class="xi-close"></i></div>
@@ -704,9 +716,6 @@ Voluptate consequat anim do anim ex id deserunt tempor dolor deserunt deserunt t
                         </div> 
                 </div>
             </ol>
-            <div class="btnWrap">
-                <button class="btn create">Run</button>
-            </div>
         </section>
     </main>
 
@@ -781,7 +790,36 @@ Voluptate consequat anim do anim ex id deserunt tempor dolor deserunt deserunt t
                 modal5.classList.add('hidden5');
             }
         })
+    </script>
+    <!-- menu -->
+    <script>
+        var burger = document.querySelector('.burger')
+        var nav = document.querySelector('.nav-links')
+    
+        var b1 = document.querySelector('.line1');
+        var b2 = document.querySelector('.line2');
+        var b3 = document.querySelector('.line3');
 
+        burger.addEventListener('click',function(){
+            nav.classList.toggle('nav-active');
+            b1.classList.toggle('active');
+            b2.classList.toggle('active');
+            b3.classList.toggle('active');
+        })
+
+        window.addEventListener('resize', function(){
+            nav.classList.remove('nav-active');
+            b1.classList.remove('active');
+            b2.classList.remove('active');
+            b3.classList.remove('active');
+        })
+
+        window.addEventListener('scroll', function(){
+            nav.classList.remove('nav-active');
+            b1.classList.remove('active');
+            b2.classList.remove('active');
+            b3.classList.remove('active');
+        })
     </script>
 </body>
 </html>
