@@ -62,11 +62,13 @@
     /* width:90%; */
     /* margin:0 auto; */
 }
-.header{position: relative; background-color:#14233C; z-index: 100; height: 110px; 
-    opacity: 0.9;
+.header{position: relative; z-index: 100; height: 110px; 
     }
 .header .account_header ul{display:flex;}
-.header .account_header{width:90%; margin:0 auto; display:flex; justify-content:flex-end; height: 50px; align-items: center;}
+.header .account_header{
+    background-color: #14233C;
+    opacity: 0.8;
+    width:90%; margin:0 auto; display:flex; justify-content:flex-end; height: 50px; align-items: center;}
 .header .account_header a{color:whitesmoke; font-size: 12px; display: flex; align-items: center; font-weight: 100;}
 .header i{margin-right:5px; font-size: 16px;}
 .header div ul li{display:inline-block; margin-left:10px;}
@@ -84,7 +86,7 @@
     background-size: cover;
     background:url(../img/cover_color_post.png) fixed;
     z-index: 1;
-    background-position: bottom;
+    background-position: top;
     position: absolute;
     top: 0;
 }
@@ -250,6 +252,13 @@
     margin: 100px 0;
 }
 .myProfile_wrap .button{display: flex; justify-content: center;}
+
+/* team */
+.team_wrap .team_profileWrap{display:flex;flex-wrap: wrap; justify-content: center;}
+.team_profileWrap div{padding:10px;}
+.team_profileWrap div img{width:100%;}
+.team_profileWrap div h1{font-weight: 600; color: #14233C;}
+.team_profileWrap div p{color:#2991CC;}
 
 /* main */
 .main{
@@ -720,8 +729,22 @@ nav{display: flex; justify-content: space-around; align-items: center;
 } */
 
 @media screen and (max-width:768px){
+    /* .nav-links > ul > li{list-style:none;} */
     .hamberger-System-menu{
-        top:525px;
+        top: 476px;
+        left: 146px;
+    }
+    .hamberger-System-menu{
+        display: block;
+    }
+    /* .hamberger-System ul li{
+        border-bottom: none;
+    }
+    .hamberger-System-menu li{
+        border-bottom: none;
+    }; */
+    .hamberger-System-menu a{
+        font-size: 20px;
     }
 
     .appInfoContent img{width:100%;}
@@ -752,7 +775,7 @@ nav{display: flex; justify-content: space-around; align-items: center;
         transition:none;
         padding-right:10px;
     }
-    .nav-links li{
+    .nav-links > ul > li{
         border-bottom: 1px solid #fff;
         margin-left: 0;
         padding: 10px;
@@ -772,7 +795,6 @@ nav{display: flex; justify-content: space-around; align-items: center;
 .line1.active{
     /* transform: rotate(-45deg) translate(-6px, 6px); */
     transform: translateY(8px);
-
 }
 
 .line2.active{

@@ -8,12 +8,12 @@ window.addEventListener('load',function(){
 
     // request modal
     function modal_request(){
-        var open = document.querySelector('#modal_request');
+        var open1 = document.querySelector('#modal_request');
         var modal = document.querySelector('.modal');
         var overlay = document.querySelector('.modal_overlay');
         var close = document.querySelector('.closeButton');
         
-        open.addEventListener('click', function() {
+        open1.addEventListener('click', function() {
             modal.classList.remove('hidden');
         })
         
