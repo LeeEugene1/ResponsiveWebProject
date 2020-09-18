@@ -17,14 +17,14 @@
         <header class="header">
             <div class="account_header">
                 <ul>
-                    <li><a href=""><i class="xi-profile-o"></i>Sign in</a></li>
+                    <li><a href="./signin.html"><i class="xi-profile-o"></i>Sign in</a></li>
                     <!-- <li><a href=""><i class="xi-profile"></i>Nickname</a></li> -->
                     <!-- <li><a href=""><i class="xi-log-out"></i>Log out</a></li> -->
                     <li><a href="./login.html"><i class="xi-log-in"></i>Log in</a></li>
                 </ul>
             </div>
             <div class="menu_header">
-                <h2><a href="">CSK</a></h2>
+                <h2><a href="./index.html">CSK</a></h2>
                 <nav class="nav-links">
                     <ul>
                         <li class="li-hidden"><a href=""></i>Sign in</a></li>
@@ -33,10 +33,15 @@
                         <!-- <li hidden><a href=""><i class="xi-log-out"></i>Log out</a></li> -->
 
                         <li><a href="./dashboard_list.html">Dashboard</a></li>
-                        <li><a href="">Apps</a></li>
-                        <li><a href="">Pipelines</a></li>
-                        <li><a href="">Team</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="./appInfo.html">Apps</a></li>
+                        <li><a href="./pipelines.html">Pipelines</a></li>
+                        <li><a href="./team.html">Team</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li class="hamberger-System hover"><a href="">System</a>
+                            <ul class="hamberger-System-menu">
+                                <li><a href="./userInfo.html">User info</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
                 <div class="burger">
@@ -60,17 +65,38 @@
         <section class="left_section">
             <div class="leftMenu active">
                 <div>
-                    <h3><a href="">DashBoard</a></h3>
+                    <h3><a href="./dashboard_list.html">DashBoard</a></h3>
                 </div>
             </div>
             <div class="leftMenu">
                 <div>
-                    <h3><a href="">Apps</a></h3>
+                    <h3><a href="./appInfo.html">Apps</a></h3>
                 </div>
             </div>
             <div class="leftMenu">
                 <div>
-                    <h3><a href="">pipelines</a></h3>
+                    <h3><a href="./pipelines.html">pipelines</a></h3>
+                </div>
+            </div>
+            <div class="leftMenu">
+                <div class="accordion" onclick="return false">
+                    <div class="accordion_btn">
+                        <h3><a href="">System</a></h3>
+                    </div>
+                    <!-- <div><i class="xi-angle-down"></i></div> -->
+                    <div class="accordion_content">
+                        <h4><a href="./userInfo.html">User info</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="leftMenu">
+                <div>
+                    <h3><a href="./team.html">Team</a></h3>
+                </div>
+            </div>
+            <div class="leftMenu">
+                <div>
+                    <h3><a href="./contact.html">Contact</a></h3>
                 </div>
             </div>
         </section>
@@ -418,37 +444,10 @@
             
         </section>
     </main>
-
     <script src="./js/modal.js"></script>
+    <!-- accordion -->
+    <script src="./js/accordion.js"></script>
     <!-- menu -->
-    <script>
-        var burger = document.querySelector('.burger')
-        var nav = document.querySelector('.nav-links')
-    
-        var b1 = document.querySelector('.line1');
-        var b2 = document.querySelector('.line2');
-        var b3 = document.querySelector('.line3');
-
-        burger.addEventListener('click',function(){
-            nav.classList.toggle('nav-active');
-            b1.classList.toggle('active');
-            b2.classList.toggle('active');
-            b3.classList.toggle('active');
-        })
-
-        window.addEventListener('resize', function(){
-            nav.classList.remove('nav-active');
-            b1.classList.remove('active');
-            b2.classList.remove('active');
-            b3.classList.remove('active');
-        })
-
-        window.addEventListener('scroll', function(){
-            nav.classList.remove('nav-active');
-            b1.classList.remove('active');
-            b2.classList.remove('active');
-            b3.classList.remove('active');
-        })
-    </script>
+    <script src="./menu.js"></script>
 </body>
 </html>

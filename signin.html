@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="account_header">
+                <ul>
+                    <li><a href="./signin.html"><i class="xi-profile-o"></i>Sign in</a></li>
+                    <!-- <li><a href=""><i class="xi-profile"></i>Nickname</a></li> -->
+                    <!-- <li><a href=""><i class="xi-log-out"></i>Log out</a></li> -->
+                    <li><a href="./login.html"><i class="xi-log-in"></i>Log in</a></li>
+                </ul>
+            </div>
+            <div class="menu_header">
+                <h2><a href="">CSK</a></h2>
+                <nav class="nav-links">
+                    <ul>
+                        <li class="li-hidden"><a href=""></i>Sign in</a></li>
+                        <!-- <li hidden><a href=""><i class="xi-profile"></i>Nickname</a></li> -->
+                        <li class="li-hidden"><a href="./login.html">Log in</a></li>
+                        <!-- <li hidden><a href=""><i class="xi-log-out"></i>Log out</a></li> -->
+
+                        <li><a href="./dashboard_list.html">Dashboard</a></li>
+                        <li><a href="./appInfo.html">Apps</a></li>
+                        <li><a href="./pipelines.html">Pipelines</a></li>
+                        <li><a href="./team.html">Team</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li class="hamberger-System hover"><a href="">System</a>
+                            <ul class="hamberger-System-menu">
+                                <li><a href="">User info</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="colorBox_login">
+        <div class="loginWrap">
+            <div class="box_login">
+            <div class="title_login"><h2>Sign In</h2></div>
+                <form name="registerForm" role="form" action="/pipeline/login/registerAction.do" method="post">
+                    <div class="input_login">
+                         <input type="hidden" id="rowStatus" name="rowStatus" value="I">
+                        <input type="hidden" id="mbrUsePssbCpty" name="mbrUsePssbCpty" value="20">
+                        <input type="text" id="mbrNm" name="mbrNm" placeholder="Name" required="">
+                        <input type="email" id="mbrEmailAd" name="mbrEmailAd" placeholder="Email address" required="" autocomplete="off">
+                        <input type="password" id="pinNo" name="pinNo" placeholder="Password" required="" autocomplete="off">
+                        <input type="password" id="pinNo2" name="pinNo2" placeholder="Password confirm" required="">
+                        <input type="text" id="mbrOrgnNm" name="mbrOrgnNm" placeholder="Organization and company">
+                    </div>
+                    <div class="button_login">
+                        <button class="btn login" type="submit" onclick="fnSave(); return false;">Sign In</button>
+                    </div>
+                </form>   
+            </div>
+        </div>
+    </div>
+</body>
+</html>

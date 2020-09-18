@@ -14,23 +14,38 @@
         <header class="header">
             <div class="account_header">
                 <ul>
-                    <li><a href=""><i class="xi-profile-o"></i>Sign in</a></li>
+                    <li><a href="./signin.html"><i class="xi-profile-o"></i>Sign in</a></li>
                     <!-- <li><a href=""><i class="xi-profile"></i>Nickname</a></li> -->
                     <!-- <li><a href=""><i class="xi-log-out"></i>Log out</a></li> -->
                     <li><a href="./login.html"><i class="xi-log-in"></i>Log in</a></li>
                 </ul>
             </div>
             <div class="menu_header">
-                <h2><a href="">CSK</a></h2>
-                <nav>
+                <h2><a href="./index.html">CSK</a></h2>
+                <nav class="nav-links">
                     <ul>
+                        <li class="li-hidden"><a href=""></i>Sign in</a></li>
+                        <!-- <li hidden><a href=""><i class="xi-profile"></i>Nickname</a></li> -->
+                        <li class="li-hidden"><a href="./login.html">Log in</a></li>
+                        <!-- <li hidden><a href=""><i class="xi-log-out"></i>Log out</a></li> -->
+
                         <li><a href="./dashboard_list.html">Dashboard</a></li>
-                        <li><a href="">Apps</a></li>
-                        <li><a href="">Pipelines</a></li>
-                        <li><a href="">Team</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="./appInfo.html">Apps</a></li>
+                        <li><a href="./pipelines.html">Pipelines</a></li>
+                        <li><a href="./team.html">Team</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li class="hamberger-System hover"><a href="">System</a>
+                            <ul class="hamberger-System-menu">
+                                <li><a href="./userInfo.html">User info</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
             </div>
         </header>
     </div>
@@ -59,11 +74,13 @@
                                 <li><a href="">Forget your id</a></li>
                                 <li><a href="">/ password?</a></li>
                             </div>
-                            <li><a href="">Create an account</a></li>
+                            <li><a href="./signin.html">Create an account</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
     </div>
+    <!-- menu -->
+    <script src="./menu.js"></script>
 </body>
 </html>
