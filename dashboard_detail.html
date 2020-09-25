@@ -83,9 +83,16 @@
                     <div class="accordion_btn">
                         <h3><a href="">System</a></h3>
                     </div>
-                    <!-- <div><i class="xi-angle-down"></i></div> -->
                     <div class="accordion_content">
                         <h4><a href="./userInfo.html">User info</a></h4>
+                        <div class="accordion" onclick="return false">
+                            <div class="accordion_btn">
+                                <h3><a href="" style="color:#707070; font-size:16px; font-weight: 100;">기초정보관리</a></h3>
+                            </div>
+                            <div class="accordion_content">
+                                <h4 style="background-color: lightgrey;"><a href="./userInfo.html">어플관리</a></h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -425,7 +432,7 @@ Voluptate consequat anim do anim ex id deserunt tempor dolor deserunt deserunt t
                     </colgroup>
                     <thead>
                         <tr>
-                            <th scope="col"><input type="checkbox" name="selectall" id="selectall" /></th>
+                            <th scope="col"><input type="checkbox" name="selectall" id="selectall" /><b</th>
                             <th scope="col">Category</th>
                             <th scope="col">R1</th>
                             <th scope="col">R2</th>
@@ -514,8 +521,10 @@ Voluptate consequat anim do anim ex id deserunt tempor dolor deserunt deserunt t
                                 <img src="./img/pipeline2.png" alt="">
                                 <div class="listWrap">
                                     <div class="APIList">
-                                        <input type="checkbox">
-                                        <span>Hepatotoxicity</span>
+                                        <div class="APIListTitleWrap">
+                                            <input type="checkbox" id="disabledCheckbox" disabled checked><label for="disabledCheckbox"></label>
+                                            <span>Hepatotoxicity</span>
+                                        </div>
                                         <p>Mollit incididunt non duis minim fugiat.Mollit incididunt non duis minim fugiat.Mollit incididunt non duis minim fugiat.</p>
                                     </div>
                                 </div>
@@ -524,9 +533,11 @@ Voluptate consequat anim do anim ex id deserunt tempor dolor deserunt deserunt t
                                 <img src="./img/pipeline2.png" alt="">
                                 <div class="listWrap">
                                     <div class="APIList">
-                                        <input type="checkbox">
-                                        <span>Hepatotoxicity</span>
-                                        <p>Mollit incididunt non duis minim fugiat.Mollit incididunt non duis minim fugiat.Mollit incididunt non duis minim fugiat.</p>
+                                        <div class="APIListTitleWrap">
+                                            <input type="checkbox" id="disabledCheckbox" disabled><label for="disabledCheckbox"></label>
+                                            <span>Hepatotoxicity</span>
+                                        </div>
+                                            <p>Mollit incididunt non duis minim fugiat.Mollit incididunt non duis minim fugiat.Mollit incididunt non duis minim fugiat.</p>
                                     </div>
                                 </div>
                             </div>
@@ -534,9 +545,11 @@ Voluptate consequat anim do anim ex id deserunt tempor dolor deserunt deserunt t
                                 <img src="./img/pipeline2.png" alt="">
                                 <div class="listWrap">
                                     <div class="APIList">
-                                        <input type="checkbox">
-                                        <span>Hepatotoxicity</span>
-                                        <p>Mollit incididunt non duis minim fugiat.Mollit incididunt non duis minim fugiat.Mollit incididunt non duis minim fugiat.</p>
+                                        <div class="APIListTitleWrap">
+                                            <input type="checkbox" id="disabledCheckbox" disabled checked><label for="disabledCheckbox"></label>
+                                            <span>Hepatotoxicity</span>
+                                        </div>
+                                            <p>Mollit incididunt non duis minim fugiat.Mollit incididunt non duis minim fugiat.Mollit incididunt non duis minim fugiat.</p>
                                     </div>
                                 </div>
                             </div>
@@ -757,19 +770,33 @@ Voluptate consequat anim do anim ex id deserunt tempor dolor deserunt deserunt t
         });
 
         //accordion
-        var acc = document.getElementsByClassName('accordion_btn');
+        // var acc = document.getElementsByClassName('accordion_btn');
+        //     for(var i = 0; i<acc.length; i++){
+        //         acc[i].onclick= function(){
+        //             this.classList.toggle('accordion_btn--active');
+        //             var content = this.nextSibling;
+        //             if(content.style.display === "block"){
+        //                 content.style.display = "none";
+        //             }else{
+        //                 content.style.display = "block";
+        //             }
+        //         }
+        //     }
+
+            var acc = document.getElementsByClassName('accordion_btn');
             for(var i = 0; i<acc.length; i++){
-                acc[i].onclick= function(){
-                    this.classList.toggle('accordion_btn--active');
-                    var content = this.nextSibling;
-                    if(content.style.display === "block"){
-                        content.style.display = "none";
-                    }else{
-                        content.style.display = "block";
-                    }
+                acc[i].addEventListener('click', toggleFunc, false);
+            }
+
+            function toggleFunc(){
+                acc.classList.toggle('accordion_btn--active');
+                var content = this.nextElementSibling;
+                if(content.style.display === "block"){
+                    content.style.display = "none";
+                }else{
+                    content.style.display = "block";
                 }
             }
-            // this.classList.toggle('accordion_content--active');
     
         function openTab(evt, name){
             var tab = document.getElementsByClassName("tabcontent");
